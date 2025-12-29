@@ -1,0 +1,16 @@
+account_id,company_name,industry,amount,days_overdue,payment_history_score,shipment_volume_30d,shipment_volume_change_30d,express_ratio,destination_diversity,email_opened,contact_attempts,dispute_flag,customer_tenure_months,region,outcome
+ACC0001,Bharat Logistics Pvt Ltd,Technology,85420,35,0.78,45,0.15,0.65,12,TRUE,2,FALSE,48,South,1
+ACC0002,Surya Textiles,Textile,1250000,65,0.55,28,-0.05,0.25,8,FALSE,4,FALSE,24,West,0
+ACC0003,Global Pharma Solutions,Healthcare,450000,42,0.82,120,0.35,0.80,35,TRUE,1,FALSE,72,North,1
+ACC0004,Rapid Constructions,Construction,2800000,150,0.40,15,-0.45,0.10,3,FALSE,9,TRUE,12,Central,0
+ACC0005,Apex Traders,Retail,120000,55,0.62,30,0.02,0.35,6,TRUE,3,FALSE,36,East,1
+ACC0006,InfoEdge Tech,Technology,65000,31,0.90,55,0.22,0.75,18,TRUE,0,FALSE,60,South,1
+ACC0007,Vijay Industries,Manufacturing,1800000,88,0.50,42,-0.12,0.30,10,FALSE,6,TRUE,18,West,0
+ACC0008,Red Enterprises,Food & Beverage,95000,45,0.70,60,0.08,0.45,15,TRUE,2,FALSE,30,North,1
+ACC0009,Zenith Exports,E-commerce,350000,38,0.85,180,0.50,0.88,48,TRUE,1,FALSE,55,South,1
+ACC0010,Lakshmi Apparels Pvt Ltd,Textile,220000,110,0.35,8,-0.55,0.15,2,FALSE,8,FALSE,9,East,0
+ACC0011,Tata Solutions,Technology,4100000,58,0.72,90,0.10,0.68,22,TRUE,3,FALSE,90,West,1
+ACC0012,Aditya Healthcare,Healthcare,150000,33,0.92,35,0.28,0.70,11,TRUE,0,FALSE,84,Central,1
+ACC0013,National Constructions,Construction,750000,175,0.25,5,-0.35,0.05,1,FALSE,10,TRUE,6,North,0
+ACC0014,Blue Logistics,Retail,280000,62,0.66,25,-0.02,0.40,7,FALSE,5,FALSE,40,South,1
+ACC0015,Ganesh Manufacturing,Manufacturing,1600000,95,0.48,50,-0.18,0.28,14,TRUE,7,FALSE,22,East,0
