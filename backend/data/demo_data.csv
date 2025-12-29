@@ -1,16 +1,11 @@
-account_id,company_name,industry,amount,days_overdue,payment_history_score,shipment_volume_30d,shipment_volume_change_30d,express_ratio,destination_diversity,email_opened,contact_attempts,dispute_flag,customer_tenure_months,region,outcome
-ACC0001,TechCorp Solutions Pvt Ltd,Technology,2800000,90,0.88,45,0.4,0.65,18,True,3,False,36,South,1
-ACC2000,Demo_Client_0,Retail,225680,35,0.62,76,0.15,0.55,15,True,1,False,27,North,0
-ACC2001,Demo_Client_1,Construction,494225,50,0.56,33,-0.09,0.79,13,False,5,False,58,Central,0
-ACC2002,Demo_Client_2,Construction,730118,20,0.88,49,0.1,0.36,7,False,1,False,59,West,0
-ACC2003,Demo_Client_3,Manufacturing,204728,43,0.84,51,0.06,0.38,7,True,5,False,19,South,0
-ACC2004,Demo_Client_4,Construction,98375,51,0.61,87,0.13,0.78,15,True,2,False,12,South,0
-ACC2005,Demo_Client_5,Healthcare,627031,13,0.51,64,0.18,0.4,14,True,3,False,23,West,0
-ACC2006,Demo_Client_6,Retail,770855,20,0.72,80,0.04,0.36,10,True,5,False,41,East,0
-ACC2007,Demo_Client_7,Retail,293306,57,0.53,92,0.07,0.4,20,True,5,False,45,Central,0
-ACC2008,Demo_Client_8,Manufacturing,635864,31,0.76,83,0.06,0.66,11,False,1,False,55,East,0
-ACC2009,Demo_Client_9,Textile,528980,41,0.78,14,0.02,0.77,5,True,5,False,28,East,0
-ACC2010,Demo_Client_10,Retail,959625,18,0.53,36,0.17,0.7,19,False,1,False,32,Central,0
-ACC2011,Demo_Client_11,Technology,651117,51,0.53,55,0.13,0.48,20,True,4,False,25,Central,0
-ACC2012,Demo_Client_12,Textile,367709,24,0.62,51,-0.01,0.74,18,True,4,False,24,West,0
-ACC2013,Demo_Client_13,Construction,550346,44,0.55,70,-0.07,0.24,17,True,3,False,41,West,0
+account_id,company_name,industry,region,amount,days_overdue,payment_history_score,shipment_volume_change_30d,email_opened,dispute_flag,outcome
+DEMO001,TechCorp Global,Tech,West,45000,78,0.22,-0.6,0,1,0
+DEMO002,SafePay Industries,Retail,North,32000,8,0.94,0.3,1,0,1
+DEMO003,RiskyCo Ltd,Construction,South,28500,85,0.18,-0.55,0,1,0
+DEMO004,TrustBuild Inc,Medical,East,51000,12,0.91,0.35,1,0,1
+DEMO005,DelayedPay Corp,Textile,West,19000,72,0.25,-0.48,1,0,0
+DEMO006,AlwaysOnTime LLC,Retail,North,38000,5,0.97,0.42,1,0,1
+DEMO007,StruggleTech,Tech,South,42000,81,0.19,-0.52,0,1,0
+DEMO008,PremiumClient Co,Medical,East,67000,10,0.95,0.38,1,0,1
+DEMO009,CashFlow Problems,Construction,West,23000,88,0.15,-0.58,0,0,0
+DEMO010,GoldStar Partners,Retail,North,55000,6,0.98,0.45,1,0,1
