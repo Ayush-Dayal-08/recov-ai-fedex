@@ -1,16 +1,16 @@
 account_id,company_name,industry,amount,days_overdue,payment_history_score,shipment_volume_30d,shipment_volume_change_30d,express_ratio,destination_diversity,email_opened,contact_attempts,dispute_flag,customer_tenure_months,region,outcome
-ACC0001,Bharat Logistics Pvt Ltd,Technology,85420,35,0.78,45,0.15,0.65,12,TRUE,2,FALSE,48,South,1
-ACC0002,Surya Textiles,Textile,1250000,65,0.55,28,-0.05,0.25,8,FALSE,4,FALSE,24,West,0
-ACC0003,Global Pharma Solutions,Healthcare,450000,42,0.82,120,0.35,0.80,35,TRUE,1,FALSE,72,North,1
-ACC0004,Rapid Constructions,Construction,2800000,150,0.40,15,-0.45,0.10,3,FALSE,9,TRUE,12,Central,0
-ACC0005,Apex Traders,Retail,120000,55,0.62,30,0.02,0.35,6,TRUE,3,FALSE,36,East,1
-ACC0006,InfoEdge Tech,Technology,65000,31,0.90,55,0.22,0.75,18,TRUE,0,FALSE,60,South,1
-ACC0007,Vijay Industries,Manufacturing,1800000,88,0.50,42,-0.12,0.30,10,FALSE,6,TRUE,18,West,0
-ACC0008,Red Enterprises,Food & Beverage,95000,45,0.70,60,0.08,0.45,15,TRUE,2,FALSE,30,North,1
-ACC0009,Zenith Exports,E-commerce,350000,38,0.85,180,0.50,0.88,48,TRUE,1,FALSE,55,South,1
-ACC0010,Lakshmi Apparels Pvt Ltd,Textile,220000,110,0.35,8,-0.55,0.15,2,FALSE,8,FALSE,9,East,0
-ACC0011,Tata Solutions,Technology,4100000,58,0.72,90,0.10,0.68,22,TRUE,3,FALSE,90,West,1
-ACC0012,Aditya Healthcare,Healthcare,150000,33,0.92,35,0.28,0.70,11,TRUE,0,FALSE,84,Central,1
-ACC0013,National Constructions,Construction,750000,175,0.25,5,-0.35,0.05,1,FALSE,10,TRUE,6,North,0
-ACC0014,Blue Logistics,Retail,280000,62,0.66,25,-0.02,0.40,7,FALSE,5,FALSE,40,South,1
-ACC0015,Ganesh Manufacturing,Manufacturing,1600000,95,0.48,50,-0.18,0.28,14,TRUE,7,FALSE,22,East,0
+ACC0001,TechCorp Solutions Pvt Ltd,Technology,2800000,90,0.88,45,0.4,0.65,18,True,3,False,36,South,1
+ACC2000,Demo_Client_0,Retail,225680,35,0.62,76,0.15,0.55,15,True,1,False,27,North,0
+ACC2001,Demo_Client_1,Construction,494225,50,0.56,33,-0.09,0.79,13,False,5,False,58,Central,0
+ACC2002,Demo_Client_2,Construction,730118,20,0.88,49,0.1,0.36,7,False,1,False,59,West,0
+ACC2003,Demo_Client_3,Manufacturing,204728,43,0.84,51,0.06,0.38,7,True,5,False,19,South,0
+ACC2004,Demo_Client_4,Construction,98375,51,0.61,87,0.13,0.78,15,True,2,False,12,South,0
+ACC2005,Demo_Client_5,Healthcare,627031,13,0.51,64,0.18,0.4,14,True,3,False,23,West,0
+ACC2006,Demo_Client_6,Retail,770855,20,0.72,80,0.04,0.36,10,True,5,False,41,East,0
+ACC2007,Demo_Client_7,Retail,293306,57,0.53,92,0.07,0.4,20,True,5,False,45,Central,0
+ACC2008,Demo_Client_8,Manufacturing,635864,31,0.76,83,0.06,0.66,11,False,1,False,55,East,0
+ACC2009,Demo_Client_9,Textile,528980,41,0.78,14,0.02,0.77,5,True,5,False,28,East,0
+ACC2010,Demo_Client_10,Retail,959625,18,0.53,36,0.17,0.7,19,False,1,False,32,Central,0
+ACC2011,Demo_Client_11,Technology,651117,51,0.53,55,0.13,0.48,20,True,4,False,25,Central,0
+ACC2012,Demo_Client_12,Textile,367709,24,0.62,51,-0.01,0.74,18,True,4,False,24,West,0
+ACC2013,Demo_Client_13,Construction,550346,44,0.55,70,-0.07,0.24,17,True,3,False,41,West,0

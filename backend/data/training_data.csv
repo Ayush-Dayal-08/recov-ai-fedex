@@ -1,501 +1,501 @@
 account_id,company_name,industry,amount,days_overdue,payment_history_score,shipment_volume_30d,shipment_volume_change_30d,express_ratio,destination_diversity,email_opened,contact_attempts,dispute_flag,customer_tenure_months,region,outcome
-ACC0001,Bharat Logistics Pvt Ltd,Technology,85420,35,0.78,45,0.15,0.65,12,TRUE,2,FALSE,48,South,1
-ACC0002,Surya Textiles,Textile,1250000,65,0.55,28,-0.05,0.25,8,FALSE,4,FALSE,24,West,0
-ACC0003,Global Pharma Solutions,Healthcare,450000,42,0.82,120,0.35,0.80,35,TRUE,1,FALSE,72,North,1
-ACC0004,Rapid Constructions,Construction,2800000,150,0.40,15,-0.45,0.10,3,FALSE,9,TRUE,12,Central,0
-ACC0005,Apex Traders,Retail,120000,55,0.62,30,0.02,0.35,6,TRUE,3,FALSE,36,East,1
-ACC0006,InfoEdge Tech,Technology,65000,31,0.90,55,0.22,0.75,18,TRUE,0,FALSE,60,South,1
-ACC0007,Vijay Industries,Manufacturing,1800000,88,0.50,42,-0.12,0.30,10,FALSE,6,TRUE,18,West,0
-ACC0008,Red Enterprises,Food & Beverage,95000,45,0.70,60,0.08,0.45,15,TRUE,2,FALSE,30,North,1
-ACC0009,Zenith Exports,E-commerce,350000,38,0.85,180,0.50,0.88,48,TRUE,1,FALSE,55,South,1
-ACC0010,Lakshmi Apparels Pvt Ltd,Textile,220000,110,0.35,8,-0.55,0.15,2,FALSE,8,FALSE,9,East,0
-ACC0011,Tata Solutions,Technology,4100000,58,0.72,90,0.10,0.68,22,TRUE,3,FALSE,90,West,1
-ACC0012,Aditya Healthcare,Healthcare,150000,33,0.92,35,0.28,0.70,11,TRUE,0,FALSE,84,Central,1
-ACC0013,National Constructions,Construction,750000,175,0.25,5,-0.35,0.05,1,FALSE,10,TRUE,6,North,0
-ACC0014,Blue Logistics,Retail,280000,62,0.66,25,-0.02,0.40,7,FALSE,5,FALSE,40,South,1
-ACC0015,Ganesh Manufacturing,Manufacturing,1600000,95,0.48,50,-0.18,0.28,14,TRUE,7,FALSE,22,East,0
-ACC0016,Reliance Tech,Technology,88000,36,0.80,65,0.18,0.82,19,TRUE,1,FALSE,50,West,1
-ACC0017,Apex Pharma Pvt Ltd,Healthcare,550000,40,0.75,40,0.05,0.60,13,TRUE,2,FALSE,66,North,1
-ACC0018,Surya Enterprises,Food & Beverage,110000,59,0.60,32,0.00,0.42,9,FALSE,3,FALSE,28,Central,1
-ACC0019,Rapid Exports,E-commerce,3200000,45,0.88,150,0.42,0.90,40,TRUE,1,FALSE,78,South,1
-ACC0020,Vijay Textiles,Textile,195000,130,0.30,12,-0.40,0.20,4,FALSE,9,TRUE,15,East,0
-ACC0021,InfoEdge Logistics,Retail,72000,39,0.74,22,0.12,0.38,6,TRUE,2,FALSE,44,West,1
-ACC0022,Global Manufacturing,Manufacturing,1350000,70,0.52,38,-0.08,0.33,11,FALSE,5,FALSE,20,North,0
-ACC0023,Bharat Traders Pvt Ltd,Technology,92000,32,0.84,70,0.25,0.78,20,TRUE,1,FALSE,52,South,1
-ACC0024,Zenith Constructions,Construction,2500000,160,0.38,8,-0.30,0.12,2,FALSE,10,TRUE,10,Central,0
-ACC0025,Red Healthcare,Healthcare,480000,50,0.76,45,0.08,0.65,12,TRUE,2,FALSE,64,East,1
-ACC0026,Lakshmi Industries,Food & Beverage,140000,65,0.58,28,-0.03,0.48,8,FALSE,4,FALSE,26,West,1
-ACC0027,Tata Exports,E-commerce,3800000,41,0.91,160,0.48,0.92,42,TRUE,0,FALSE,82,North,1
-ACC0028,Aditya Textiles,Textile,210000,105,0.45,15,-0.25,0.22,5,FALSE,8,FALSE,16,South,0
-ACC0029,National Solutions,Technology,80000,34,0.77,58,0.16,0.73,17,TRUE,1,FALSE,49,East,1
-ACC0030,Blue Manufacturing,Manufacturing,1700000,92,0.49,48,-0.15,0.29,13,FALSE,7,TRUE,21,West,0
-ACC0031,Ganesh Logistics Pvt Ltd,Retail,105000,57,0.68,26,0.01,0.41,7,TRUE,3,FALSE,34,Central,1
-ACC0032,Reliance Pharma,Healthcare,520000,37,0.81,41,0.06,0.62,12,TRUE,1,FALSE,68,North,1
-ACC0033,Apex Constructions,Construction,2300000,145,0.41,10,-0.28,0.08,3,FALSE,9,TRUE,13,South,0
-ACC0034,Surya Traders,Food & Beverage,130000,63,0.59,30,-0.01,0.44,8,FALSE,4,FALSE,29,East,1
-ACC0035,Rapid Tech,Technology,90000,33,0.86,62,0.20,0.76,18,TRUE,1,FALSE,51,West,1
-ACC0036,Vijay Exports,E-commerce,3400000,43,0.89,140,0.45,0.89,38,TRUE,1,FALSE,80,North,1
-ACC0037,InfoEdge Textiles,Textile,205000,115,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,14,South,0
-ACC0038,Global Enterprises,Retail,78000,38,0.75,24,0.14,0.39,6,TRUE,2,FALSE,42,East,1
-ACC0039,Bharat Manufacturing Pvt Ltd,Manufacturing,1550000,75,0.51,36,-0.10,0.31,10,FALSE,5,FALSE,19,West,0
-ACC0040,Zenith Solutions,Technology,94000,31,0.85,75,0.28,0.80,21,TRUE,0,FALSE,54,Central,1
-ACC0041,Red Logistics,Healthcare,580000,46,0.73,43,0.07,0.64,12,TRUE,2,FALSE,62,North,1
-ACC0042,Lakshmi Constructions,Construction,2600000,155,0.39,7,-0.32,0.11,2,FALSE,10,TRUE,11,South,0
-ACC0043,Tata Industries,Food & Beverage,115000,61,0.61,29,0.01,0.43,8,FALSE,4,FALSE,27,East,1
-ACC0044,Aditya Exports,E-commerce,3600000,42,0.90,155,0.47,0.91,41,TRUE,1,FALSE,81,West,1
-ACC0045,National Textiles Pvt Ltd,Textile,198000,125,0.32,13,-0.42,0.21,4,FALSE,9,TRUE,17,North,0
-ACC0046,Blue Tech,Technology,86000,35,0.79,60,0.19,0.74,17,TRUE,1,FALSE,47,South,1
-ACC0047,Ganesh Manufacturing,Manufacturing,1450000,85,0.53,40,-0.14,0.32,11,FALSE,6,FALSE,23,East,0
-ACC0048,Reliance Traders,Retail,112000,56,0.69,27,0.00,0.42,7,TRUE,3,FALSE,33,West,1
-ACC0049,Apex Pharma,Healthcare,500000,39,0.83,42,0.04,0.61,12,TRUE,1,FALSE,65,Central,1
-ACC0050,Surya Constructions,Construction,2400000,165,0.37,9,-0.31,0.09,3,FALSE,10,TRUE,10,North,0
-ACC0051,Rapid Logistics,Food & Beverage,128000,64,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,South,1
-ACC0052,Vijay Exports Pvt Ltd,E-commerce,3300000,44,0.87,145,0.44,0.88,39,TRUE,1,FALSE,79,East,1
-ACC0053,InfoEdge Textiles,Textile,208000,118,0.34,12,-0.39,0.18,4,FALSE,8,FALSE,15,West,0
-ACC0054,Global Solutions,Technology,82000,36,0.76,56,0.17,0.75,16,TRUE,1,FALSE,46,North,1
-ACC0055,Bharat Manufacturing,Manufacturing,1500000,80,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,20,South,0
-ACC0056,Zenith Traders,Retail,108000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,35,East,1
-ACC0057,Red Pharma,Healthcare,530000,38,0.80,40,0.06,0.63,12,TRUE,1,FALSE,67,West,1
-ACC0058,Lakshmi Constructions Pvt Ltd,Construction,2700000,170,0.36,6,-0.33,0.10,2,FALSE,10,TRUE,9,Central,0
-ACC0059,Tata Enterprises,Food & Beverage,118000,60,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,North,1
-ACC0060,Aditya Exports,E-commerce,3700000,40,0.93,165,0.50,0.93,43,TRUE,0,FALSE,83,South,1
-ACC0061,National Textiles,Textile,200000,122,0.33,14,-0.41,0.19,4,FALSE,9,TRUE,16,East,0
-ACC0062,Blue Tech,Technology,89000,34,0.81,64,0.21,0.77,18,TRUE,1,FALSE,53,West,1
-ACC0063,Ganesh Manufacturing,Manufacturing,1650000,90,0.47,44,-0.16,0.28,12,FALSE,7,TRUE,22,North,0
-ACC0064,Reliance Logistics,Retail,115000,55,0.70,28,0.01,0.43,7,TRUE,3,FALSE,37,South,1
-ACC0065,Apex Pharma Pvt Ltd,Healthcare,560000,37,0.82,41,0.07,0.62,12,TRUE,1,FALSE,66,East,1
-ACC0066,Surya Constructions,Construction,2450000,158,0.40,8,-0.29,0.09,3,FALSE,9,TRUE,12,West,0
-ACC0067,Rapid Enterprises,Food & Beverage,122000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,Central,1
-ACC0068,Vijay Exports,E-commerce,3500000,42,0.89,150,0.46,0.90,40,TRUE,1,FALSE,80,North,1
-ACC0069,InfoEdge Textiles,Textile,215000,112,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,15,South,0
-ACC0070,Global Solutions,Technology,84000,35,0.78,59,0.18,0.76,17,TRUE,1,FALSE,48,East,1
-ACC0071,Bharat Manufacturing,Manufacturing,1580000,82,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,20,West,0
-ACC0072,Zenith Traders Pvt Ltd,Retail,110000,56,0.68,27,0.00,0.41,7,TRUE,3,FALSE,36,North,1
-ACC0073,Red Pharma,Healthcare,540000,39,0.81,40,0.05,0.64,12,TRUE,1,FALSE,65,South,1
-ACC0074,Lakshmi Constructions,Construction,2650000,168,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,East,0
-ACC0075,Tata Enterprises,Food & Beverage,116000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,West,1
-ACC0076,Aditya Exports,E-commerce,3650000,41,0.91,158,0.48,0.91,41,TRUE,0,FALSE,82,Central,1
-ACC0077,National Textiles,Textile,202000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,17,North,0
-ACC0078,Blue Tech Pvt Ltd,Technology,87000,33,0.80,62,0.20,0.78,18,TRUE,1,FALSE,50,South,1
-ACC0079,Ganesh Manufacturing,Manufacturing,1480000,88,0.52,42,-0.15,0.29,11,FALSE,6,FALSE,21,East,0
-ACC0080,Reliance Logistics,Retail,113000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,34,West,1
-ACC0081,Apex Pharma,Healthcare,510000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,North,1
-ACC0082,Surya Constructions,Construction,2550000,162,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,South,0
-ACC0083,Rapid Enterprises,Food & Beverage,125000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,East,1
-ACC0084,Vijay Exports,E-commerce,3400000,43,0.88,145,0.44,0.89,39,TRUE,1,FALSE,79,West,1
-ACC0085,InfoEdge Textiles Pvt Ltd,Textile,212000,116,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,16,Central,0
-ACC0086,Global Solutions,Technology,81000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,North,1
-ACC0087,Bharat Manufacturing,Manufacturing,1520000,78,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,South,0
-ACC0088,Zenith Traders,Retail,109000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,35,East,1
-ACC0089,Red Pharma,Healthcare,525000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,West,1
-ACC0090,Lakshmi Constructions,Construction,2750000,172,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,North,0
-ACC0091,Tata Enterprises Pvt Ltd,Food & Beverage,119000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,29,South,1
-ACC0092,Aditya Exports,E-commerce,3750000,40,0.92,160,0.49,0.92,42,TRUE,0,FALSE,83,East,1
-ACC0093,National Textiles,Textile,204000,124,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,15,West,0
-ACC0094,Blue Tech,Technology,88000,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,52,Central,1
-ACC0095,Ganesh Manufacturing,Manufacturing,1620000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,North,0
-ACC0096,Reliance Logistics,Retail,114000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,South,1
-ACC0097,Apex Pharma,Healthcare,570000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,East,1
-ACC0098,Surya Constructions Pvt Ltd,Construction,2480000,159,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,West,0
-ACC0099,Rapid Enterprises,Food & Beverage,123000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,North,1
-ACC0100,Vijay Exports,E-commerce,3550000,42,0.90,152,0.46,0.90,40,TRUE,1,FALSE,80,South,1
-ACC0101,InfoEdge Textiles,Textile,216000,114,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,East,0
-ACC0102,Global Solutions,Technology,85000,35,0.79,58,0.18,0.75,17,TRUE,1,FALSE,49,West,1
-ACC0103,Bharat Manufacturing,Manufacturing,1590000,83,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,Central,0
-ACC0104,Zenith Traders,Retail,111000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,North,1
-ACC0105,Red Pharma Pvt Ltd,Healthcare,550000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,South,1
-ACC0106,Lakshmi Constructions,Construction,2680000,169,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,East,0
-ACC0107,Tata Enterprises,Food & Beverage,117000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,West,1
-ACC0108,Aditya Exports,E-commerce,3680000,41,0.91,156,0.48,0.91,41,TRUE,0,FALSE,82,North,1
-ACC0109,National Textiles,Textile,203000,121,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,South,0
-ACC0110,Blue Tech,Technology,86500,33,0.80,61,0.19,0.78,18,TRUE,1,FALSE,50,East,1
-ACC0111,Ganesh Manufacturing Pvt Ltd,Manufacturing,1490000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,West,0
-ACC0112,Reliance Logistics,Retail,112500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,Central,1
-ACC0113,Apex Pharma,Healthcare,515000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,North,1
-ACC0114,Surya Constructions,Construction,2580000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,South,0
-ACC0115,Rapid Enterprises,Food & Beverage,126000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,East,1
-ACC0116,Vijay Exports,E-commerce,3450000,43,0.88,148,0.44,0.89,39,TRUE,1,FALSE,79,West,1
-ACC0117,InfoEdge Textiles,Textile,214000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,North,0
-ACC0118,Global Solutions Pvt Ltd,Technology,81500,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,South,1
-ACC0119,Bharat Manufacturing,Manufacturing,1530000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,East,0
-ACC0120,Zenith Traders,Retail,109500,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,West,1
-ACC0121,Red Pharma,Healthcare,530000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,Central,1
-ACC0122,Lakshmi Constructions,Construction,2780000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,North,0
-ACC0123,Tata Enterprises,Food & Beverage,120000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,South,1
-ACC0124,Aditya Exports Pvt Ltd,E-commerce,3780000,40,0.92,162,0.49,0.92,42,TRUE,0,FALSE,83,East,1
-ACC0125,National Textiles,Textile,206000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,West,0
-ACC0126,Blue Tech,Technology,88500,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,51,North,1
-ACC0127,Ganesh Manufacturing,Manufacturing,1630000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,South,0
-ACC0128,Reliance Logistics,Retail,114500,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,East,1
-ACC0129,Apex Pharma,Healthcare,575000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,West,1
-ACC0130,Surya Constructions,Construction,2500000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,Central,0
-ACC0131,Rapid Enterprises Pvt Ltd,Food & Beverage,124000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,North,1
-ACC0132,Vijay Exports,E-commerce,3580000,42,0.90,154,0.46,0.90,40,TRUE,1,FALSE,80,South,1
-ACC0133,InfoEdge Textiles,Textile,218000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,East,0
-ACC0134,Global Solutions,Technology,85500,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,West,1
-ACC0135,Bharat Manufacturing,Manufacturing,1600000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,North,0
-ACC0136,Zenith Traders,Retail,111500,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,South,1
-ACC0137,Red Pharma,Healthcare,555000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,East,1
-ACC0138,Lakshmi Constructions Pvt Ltd,Construction,2700000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,West,0
-ACC0139,Tata Enterprises,Food & Beverage,118000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,Central,1
-ACC0140,Aditya Exports,E-commerce,3700000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,North,1
-ACC0141,National Textiles,Textile,204000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,South,0
-ACC0142,Blue Tech,Technology,87000,33,0.80,61,0.19,0.78,18,TRUE,1,FALSE,50,East,1
-ACC0143,Ganesh Manufacturing,Manufacturing,1500000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,West,0
-ACC0144,Reliance Logistics Pvt Ltd,Retail,113000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,North,1
-ACC0145,Apex Pharma,Healthcare,520000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,South,1
-ACC0146,Surya Constructions,Construction,2600000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,East,0
-ACC0147,Rapid Enterprises,Food & Beverage,127000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,West,1
-ACC0148,Vijay Exports,E-commerce,3480000,43,0.88,147,0.44,0.89,39,TRUE,1,FALSE,79,Central,1
-ACC0149,InfoEdge Textiles,Textile,215000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,North,0
-ACC0150,Global Solutions,Technology,82000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,South,1
-ACC0151,Bharat Manufacturing Pvt Ltd,Manufacturing,1540000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,East,0
-ACC0152,Zenith Traders,Retail,110000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,West,1
-ACC0153,Red Pharma,Healthcare,535000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,North,1
-ACC0154,Lakshmi Constructions,Construction,2800000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,South,0
-ACC0155,Tata Enterprises,Food & Beverage,121000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,East,1
-ACC0156,Aditya Exports,E-commerce,3800000,40,0.92,163,0.49,0.92,42,TRUE,0,FALSE,83,West,1
-ACC0157,National Textiles Pvt Ltd,Textile,208000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,Central,0
-ACC0158,Blue Tech,Technology,89000,34,0.81,64,0.20,0.77,18,TRUE,1,FALSE,51,North,1
-ACC0159,Ganesh Manufacturing,Manufacturing,1640000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,South,0
-ACC0160,Reliance Logistics,Retail,115000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,East,1
-ACC0161,Apex Pharma,Healthcare,580000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,West,1
-ACC0162,Surya Constructions,Construction,2520000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,North,0
-ACC0163,Rapid Enterprises Pvt Ltd,Food & Beverage,125000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,South,1
-ACC0164,Vijay Exports,E-commerce,3600000,42,0.90,153,0.46,0.90,40,TRUE,1,FALSE,80,East,1
-ACC0165,InfoEdge Textiles,Textile,220000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,West,0
-ACC0166,Global Solutions,Technology,86000,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,Central,1
-ACC0167,Bharat Manufacturing,Manufacturing,1610000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,North,0
-ACC0168,Zenith Traders,Retail,112000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,South,1
-ACC0169,Red Pharma Pvt Ltd,Healthcare,560000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,East,1
-ACC0170,Lakshmi Constructions,Construction,2720000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,West,0
-ACC0171,Tata Enterprises,Food & Beverage,119000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,North,1
-ACC0172,Aditya Exports,E-commerce,3720000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,South,1
-ACC0173,National Textiles,Textile,205000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,East,0
-ACC0174,Blue Tech,Technology,87500,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,West,1
-ACC0175,Ganesh Manufacturing,Manufacturing,1510000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,Central,0
-ACC0176,Reliance Logistics,Retail,113500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,North,1
-ACC0177,Apex Pharma Pvt Ltd,Healthcare,525000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,South,1
-ACC0178,Surya Constructions,Construction,2620000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,East,0
-ACC0179,Rapid Enterprises,Food & Beverage,128000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,West,1
-ACC0180,Vijay Exports,E-commerce,3500000,43,0.88,146,0.44,0.89,39,TRUE,1,FALSE,79,North,1
-ACC0181,InfoEdge Textiles,Textile,217000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,South,0
-ACC0182,Global Solutions,Technology,82500,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,East,1
-ACC0183,Bharat Manufacturing,Manufacturing,1550000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,West,0
-ACC0184,Zenith Traders Pvt Ltd,Retail,110500,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,Central,1
-ACC0185,Red Pharma,Healthcare,540000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,North,1
-ACC0186,Lakshmi Constructions,Construction,2820000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,South,0
-ACC0187,Tata Enterprises,Food & Beverage,122000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,East,1
-ACC0188,Aditya Exports,E-commerce,3820000,40,0.92,161,0.49,0.92,42,TRUE,0,FALSE,83,West,1
-ACC0189,National Textiles,Textile,210000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,North,0
-ACC0190,Blue Tech,Technology,89500,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,51,South,1
-ACC0191,Ganesh Manufacturing Pvt Ltd,Manufacturing,1650000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,East,0
-ACC0192,Reliance Logistics,Retail,115500,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,West,1
-ACC0193,Apex Pharma,Healthcare,585000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,Central,1
-ACC0194,Surya Constructions,Construction,2540000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,North,0
-ACC0195,Rapid Enterprises,Food & Beverage,126000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,South,1
-ACC0196,Vijay Exports Pvt Ltd,E-commerce,3620000,42,0.90,152,0.46,0.90,40,TRUE,1,FALSE,80,East,1
-ACC0197,InfoEdge Textiles,Textile,222000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,West,0
-ACC0198,Global Solutions,Technology,86500,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,North,1
-ACC0199,Bharat Manufacturing,Manufacturing,1620000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,South,0
-ACC0200,Zenith Traders,Retail,112500,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,East,1
-ACC0201,Red Pharma,Healthcare,565000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,West,1
-ACC0202,Lakshmi Constructions Pvt Ltd,Construction,2740000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,Central,0
-ACC0203,Tata Enterprises,Food & Beverage,120000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,North,1
-ACC0204,Aditya Exports,E-commerce,3740000,41,0.91,158,0.48,0.91,41,TRUE,0,FALSE,82,South,1
-ACC0205,National Textiles,Textile,206000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,East,0
-ACC0206,Blue Tech,Technology,88000,33,0.80,61,0.19,0.78,18,TRUE,1,FALSE,50,West,1
-ACC0207,Ganesh Manufacturing,Manufacturing,1520000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,North,0
-ACC0208,Reliance Logistics Pvt Ltd,Retail,114000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,South,1
-ACC0209,Apex Pharma,Healthcare,530000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,East,1
-ACC0210,Surya Constructions,Construction,2640000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,West,0
-ACC0211,Rapid Enterprises,Food & Beverage,129000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,Central,1
-ACC0212,Vijay Exports,E-commerce,3520000,43,0.88,147,0.44,0.89,39,TRUE,1,FALSE,79,North,1
-ACC0213,InfoEdge Textiles,Textile,219000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,South,0
-ACC0214,Global Solutions,Technology,83000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,East,1
-ACC0215,Bharat Manufacturing Pvt Ltd,Manufacturing,1560000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,West,0
-ACC0216,Zenith Traders,Retail,111000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,North,1
-ACC0217,Red Pharma,Healthcare,545000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,South,1
-ACC0218,Lakshmi Constructions,Construction,2840000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,East,0
-ACC0219,Tata Enterprises,Food & Beverage,123000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,West,1
-ACC0220,Aditya Exports,E-commerce,3840000,40,0.92,161,0.49,0.92,42,TRUE,0,FALSE,83,Central,1
-ACC0221,National Textiles,Textile,212000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,North,0
-ACC0222,Blue Tech Pvt Ltd,Technology,90000,34,0.81,64,0.20,0.77,18,TRUE,1,FALSE,51,South,1
-ACC0223,Ganesh Manufacturing,Manufacturing,1660000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,East,0
-ACC0224,Reliance Logistics,Retail,116000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,West,1
-ACC0225,Apex Pharma,Healthcare,590000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,North,1
-ACC0226,Surya Constructions,Construction,2560000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,South,0
-ACC0227,Rapid Enterprises,Food & Beverage,127000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,East,1
-ACC0228,Vijay Exports,E-commerce,3640000,42,0.90,153,0.46,0.90,40,TRUE,1,FALSE,80,West,1
-ACC0229,InfoEdge Textiles Pvt Ltd,Textile,224000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,Central,0
-ACC0230,Global Solutions,Technology,87000,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,North,1
-ACC0231,Bharat Manufacturing,Manufacturing,1630000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,South,0
-ACC0232,Zenith Traders,Retail,113000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,East,1
-ACC0233,Red Pharma,Healthcare,570000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,West,1
-ACC0234,Lakshmi Constructions,Construction,2760000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,North,0
-ACC0235,Tata Enterprises Pvt Ltd,Food & Beverage,121000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,South,1
-ACC0236,Aditya Exports,E-commerce,3760000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,East,1
-ACC0237,National Textiles,Textile,207000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,West,0
-ACC0238,Blue Tech,Technology,88500,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,Central,1
-ACC0239,Ganesh Manufacturing,Manufacturing,1530000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,North,0
-ACC0240,Reliance Logistics,Retail,114500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,South,1
-ACC0241,Apex Pharma,Healthcare,535000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,East,1
-ACC0242,Surya Constructions,Construction,2660000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,West,0
-ACC0243,Rapid Enterprises,Food & Beverage,130000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,North,1
-ACC0244,Vijay Exports,E-commerce,3540000,43,0.88,146,0.44,0.89,39,TRUE,1,FALSE,79,South,1
-ACC0245,InfoEdge Textiles,Textile,221000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,East,0
-ACC0246,Global Solutions,Technology,83500,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,West,1
-ACC0247,Bharat Manufacturing Pvt Ltd,Manufacturing,1570000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,Central,0
-ACC0248,Zenith Traders,Retail,111500,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,North,1
-ACC0249,Red Pharma,Healthcare,550000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,South,1
-ACC0250,Lakshmi Constructions,Construction,2860000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,East,0
-ACC0251,Tata Enterprises,Food & Beverage,124000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,West,1
-ACC0252,Aditya Exports,E-commerce,3860000,40,0.92,162,0.49,0.92,42,TRUE,0,FALSE,83,North,1
-ACC0253,National Textiles,Textile,214000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,South,0
-ACC0254,Blue Tech,Technology,90500,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,51,East,1
-ACC0255,Ganesh Manufacturing,Manufacturing,1670000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,West,0
-ACC0256,Reliance Logistics Pvt Ltd,Retail,116500,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,Central,1
-ACC0257,Apex Pharma,Healthcare,595000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,North,1
-ACC0258,Surya Constructions,Construction,2580000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,South,0
-ACC0259,Rapid Enterprises,Food & Beverage,128000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,East,1
-ACC0260,Vijay Exports,E-commerce,3660000,42,0.90,153,0.46,0.90,40,TRUE,1,FALSE,80,West,1
-ACC0261,InfoEdge Textiles,Textile,226000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,North,0
-ACC0262,Global Solutions,Technology,87500,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,South,1
-ACC0263,Bharat Manufacturing,Manufacturing,1640000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,East,0
-ACC0264,Zenith Traders,Retail,113500,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,West,1
-ACC0265,Red Pharma,Healthcare,575000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,Central,1
-ACC0266,Lakshmi Constructions,Construction,2780000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,North,0
-ACC0267,Tata Enterprises,Food & Beverage,122000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,South,1
-ACC0268,Aditya Exports Pvt Ltd,E-commerce,3780000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,East,1
-ACC0269,National Textiles,Textile,208000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,West,0
-ACC0270,Blue Tech,Technology,89000,33,0.80,61,0.19,0.78,18,TRUE,1,FALSE,50,North,1
-ACC0271,Ganesh Manufacturing,Manufacturing,1540000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,South,0
-ACC0272,Reliance Logistics,Retail,115000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,East,1
-ACC0273,Apex Pharma,Healthcare,540000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,West,1
-ACC0274,Surya Constructions,Construction,2680000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,Central,0
-ACC0275,Rapid Enterprises,Food & Beverage,131000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,North,1
-ACC0276,Vijay Exports,E-commerce,3560000,43,0.88,147,0.44,0.89,39,TRUE,1,FALSE,79,South,1
-ACC0277,InfoEdge Textiles Pvt Ltd,Textile,223000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,East,0
-ACC0278,Global Solutions,Technology,84000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,West,1
-ACC0279,Bharat Manufacturing,Manufacturing,1580000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,North,0
-ACC0280,Zenith Traders,Retail,112000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,South,1
-ACC0281,Red Pharma,Healthcare,555000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,East,1
-ACC0282,Lakshmi Constructions,Construction,2880000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,West,0
-ACC0283,Tata Enterprises,Food & Beverage,125000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,Central,1
-ACC0284,Aditya Exports,E-commerce,3880000,40,0.92,161,0.49,0.92,42,TRUE,0,FALSE,83,North,1
-ACC0285,National Textiles,Textile,216000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,South,0
-ACC0286,Blue Tech,Technology,91000,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,51,East,1
-ACC0287,Ganesh Manufacturing,Manufacturing,1680000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,West,0
-ACC0288,Reliance Logistics,Retail,117000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,North,1
-ACC0289,Apex Pharma Pvt Ltd,Healthcare,600000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,South,1
-ACC0290,Surya Constructions,Construction,2600000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,East,0
-ACC0291,Rapid Enterprises,Food & Beverage,129000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,West,1
-ACC0292,Vijay Exports,E-commerce,3680000,42,0.90,153,0.46,0.90,40,TRUE,1,FALSE,80,Central,1
-ACC0293,InfoEdge Textiles,Textile,228000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,North,0
-ACC0294,Global Solutions,Technology,88000,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,South,1
-ACC0295,Bharat Manufacturing,Manufacturing,1650000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,East,0
-ACC0296,Zenith Traders,Retail,114000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,West,1
-ACC0297,Red Pharma,Healthcare,580000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,North,1
-ACC0298,Lakshmi Constructions,Construction,2800000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,South,0
-ACC0299,Tata Enterprises Pvt Ltd,Food & Beverage,123000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,East,1
-ACC0300,Aditya Exports,E-commerce,3800000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,West,1
-ACC0301,National Textiles,Textile,209000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,Central,0
-ACC0302,Blue Tech,Technology,89500,33,0.80,61,0.19,0.78,18,TRUE,1,FALSE,50,North,1
-ACC0303,Ganesh Manufacturing,Manufacturing,1550000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,South,0
-ACC0304,Reliance Logistics,Retail,115500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,East,1
-ACC0305,Apex Pharma,Healthcare,545000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,West,1
-ACC0306,Surya Constructions,Construction,2700000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,North,0
-ACC0307,Rapid Enterprises,Food & Beverage,132000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,South,1
-ACC0308,Vijay Exports Pvt Ltd,E-commerce,3580000,43,0.88,147,0.44,0.89,39,TRUE,1,FALSE,79,East,1
-ACC0309,InfoEdge Textiles,Textile,225000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,West,0
-ACC0310,Global Solutions,Technology,84500,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,Central,1
-ACC0311,Bharat Manufacturing,Manufacturing,1590000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,North,0
-ACC0312,Zenith Traders,Retail,112500,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,South,1
-ACC0313,Red Pharma,Healthcare,560000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,East,1
-ACC0314,Lakshmi Constructions,Construction,2900000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,West,0
-ACC0315,Tata Enterprises,Food & Beverage,126000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,North,1
-ACC0316,Aditya Exports,E-commerce,3900000,40,0.92,162,0.49,0.92,42,TRUE,0,FALSE,83,South,1
-ACC0317,National Textiles,Textile,218000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,East,0
-ACC0318,Blue Tech,Technology,91500,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,51,West,1
-ACC0319,Ganesh Manufacturing,Manufacturing,1690000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,Central,0
-ACC0320,Reliance Logistics,Retail,117500,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,North,1
-ACC0321,Apex Pharma Pvt Ltd,Healthcare,605000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,South,1
-ACC0322,Surya Constructions,Construction,2620000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,East,0
-ACC0323,Rapid Enterprises,Food & Beverage,130000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,West,1
-ACC0324,Vijay Exports,E-commerce,3700000,42,0.90,153,0.46,0.90,40,TRUE,1,FALSE,80,North,1
-ACC0325,InfoEdge Textiles,Textile,230000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,South,0
-ACC0326,Global Solutions,Technology,88500,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,East,1
-ACC0327,Bharat Manufacturing,Manufacturing,1660000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,West,0
-ACC0328,Zenith Traders,Retail,114500,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,Central,1
-ACC0329,Red Pharma,Healthcare,585000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,North,1
-ACC0330,Lakshmi Constructions,Construction,2820000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,South,0
-ACC0331,Tata Enterprises,Food & Beverage,124000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,East,1
-ACC0332,Aditya Exports Pvt Ltd,E-commerce,3820000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,West,1
-ACC0333,National Textiles,Textile,210000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,North,0
-ACC0334,Blue Tech,Technology,90000,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,South,1
-ACC0335,Ganesh Manufacturing,Manufacturing,1560000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,East,0
-ACC0336,Reliance Logistics,Retail,116000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,West,1
-ACC0337,Apex Pharma,Healthcare,550000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,Central,1
-ACC0338,Surya Constructions,Construction,2720000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,North,0
-ACC0339,Rapid Enterprises,Food & Beverage,133000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,South,1
-ACC0340,Vijay Exports,E-commerce,3600000,43,0.88,147,0.44,0.89,39,TRUE,1,FALSE,79,East,1
-ACC0341,InfoEdge Textiles,Textile,227000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,West,0
-ACC0342,Global Solutions,Technology,85000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,North,1
-ACC0343,Bharat Manufacturing Pvt Ltd,Manufacturing,1600000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,South,0
-ACC0344,Zenith Traders,Retail,113000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,East,1
-ACC0345,Red Pharma,Healthcare,565000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,West,1
-ACC0346,Lakshmi Constructions,Construction,2920000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,Central,0
-ACC0347,Tata Enterprises,Food & Beverage,127000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,North,1
-ACC0348,Aditya Exports,E-commerce,3920000,40,0.92,162,0.49,0.92,42,TRUE,0,FALSE,83,South,1
-ACC0349,National Textiles,Textile,220000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,East,0
-ACC0350,Blue Tech,Technology,92000,34,0.81,63,0.20,0.77,18,TRUE,1,FALSE,51,West,1
-ACC0351,Ganesh Manufacturing,Manufacturing,1700000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,North,0
-ACC0352,Reliance Logistics,Retail,118000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,South,1
-ACC0353,Apex Pharma,Healthcare,610000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,East,1
-ACC0354,Surya Constructions,Construction,2640000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,West,0
-ACC0355,Rapid Enterprises,Food & Beverage,131000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,Central,1
-ACC0356,Vijay Exports Pvt Ltd,E-commerce,3720000,42,0.90,153,0.46,0.90,40,TRUE,1,FALSE,80,North,1
-ACC0357,InfoEdge Textiles,Textile,232000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,South,0
-ACC0358,Global Solutions,Technology,89000,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,East,1
-ACC0359,Bharat Manufacturing,Manufacturing,1670000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,West,0
-ACC0360,Zenith Traders,Retail,115000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,North,1
-ACC0361,Red Pharma,Healthcare,590000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,South,1
-ACC0362,Lakshmi Constructions,Construction,2840000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,East,0
-ACC0363,Tata Enterprises,Food & Beverage,125000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,West,1
-ACC0364,Aditya Exports,E-commerce,3840000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,Central,1
-ACC0365,National Textiles,Textile,211000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,North,0
-ACC0366,Blue Tech,Technology,90500,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,South,1
-ACC0367,Ganesh Manufacturing Pvt Ltd,Manufacturing,1570000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,East,0
-ACC0368,Reliance Logistics,Retail,116500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,West,1
-ACC0369,Apex Pharma,Healthcare,555000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,North,1
-ACC0370,Surya Constructions,Construction,2740000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,South,0
-ACC0371,Rapid Enterprises,Food & Beverage,134000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,East,1
-ACC0372,Vijay Exports,E-commerce,3620000,43,0.88,147,0.44,0.89,39,TRUE,1,FALSE,79,West,1
-ACC0373,InfoEdge Textiles,Textile,229000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,Central,0
-ACC0374,Global Solutions,Technology,85500,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,North,1
-ACC0375,Bharat Manufacturing,Manufacturing,1610000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,South,0
-ACC0376,Zenith Traders Pvt Ltd,Retail,113500,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,East,1
-ACC0377,Red Pharma,Healthcare,570000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,West,1
-ACC0378,Lakshmi Constructions,Construction,2940000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,North,0
-ACC0379,Tata Enterprises,Food & Beverage,128000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,South,1
-ACC0380,Aditya Exports,E-commerce,3940000,40,0.92,162,0.49,0.92,42,TRUE,0,FALSE,83,East,1
-ACC0381,National Textiles,Textile,222000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,West,0
-ACC0382,Blue Tech,Technology,92500,34,0.81,64,0.20,0.77,18,TRUE,1,FALSE,51,Central,1
-ACC0383,Ganesh Manufacturing,Manufacturing,1710000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,North,0
-ACC0384,Reliance Logistics,Retail,118500,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,South,1
-ACC0385,Apex Pharma,Healthcare,615000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,East,1
-ACC0386,Surya Constructions,Construction,2660000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,West,0
-ACC0387,Rapid Enterprises,Food & Beverage,132000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,North,1
-ACC0388,Vijay Exports,E-commerce,3740000,42,0.90,154,0.46,0.90,40,TRUE,1,FALSE,80,South,1
-ACC0389,InfoEdge Textiles Pvt Ltd,Textile,234000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,East,0
-ACC0390,Global Solutions,Technology,89500,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,West,1
-ACC0391,Bharat Manufacturing,Manufacturing,1680000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,North,0
-ACC0392,Zenith Traders,Retail,115500,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,South,1
-ACC0393,Red Pharma,Healthcare,595000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,East,1
-ACC0394,Lakshmi Constructions,Construction,2860000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,West,0
-ACC0395,Tata Enterprises,Food & Beverage,126000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,Central,1
-ACC0396,Aditya Exports,E-commerce,3860000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,North,1
-ACC0397,National Textiles,Textile,212000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,South,0
-ACC0398,Blue Tech,Technology,91000,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,East,1
-ACC0399,Ganesh Manufacturing,Manufacturing,1580000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,West,0
-ACC0400,Reliance Logistics Pvt Ltd,Retail,117000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,North,1
-ACC0401,Apex Pharma,Healthcare,560000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,South,1
-ACC0402,Surya Constructions,Construction,2760000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,East,0
-ACC0403,Rapid Enterprises,Food & Beverage,135000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,West,1
-ACC0404,Vijay Exports,E-commerce,3640000,43,0.88,148,0.44,0.89,39,TRUE,1,FALSE,79,Central,1
-ACC0405,InfoEdge Textiles,Textile,231000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,North,0
-ACC0406,Global Solutions,Technology,86000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,South,1
-ACC0407,Bharat Manufacturing,Manufacturing,1620000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,East,0
-ACC0408,Zenith Traders,Retail,114000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,West,1
-ACC0409,Red Pharma,Healthcare,575000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,North,1
-ACC0410,Lakshmi Constructions,Construction,2960000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,South,0
-ACC0411,Tata Enterprises,Food & Beverage,129000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,East,1
-ACC0412,Aditya Exports,E-commerce,3960000,40,0.92,163,0.49,0.92,42,TRUE,0,FALSE,83,West,1
-ACC0413,National Textiles Pvt Ltd,Textile,224000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,Central,0
-ACC0414,Blue Tech,Technology,93000,34,0.81,64,0.20,0.77,18,TRUE,1,FALSE,51,North,1
-ACC0415,Ganesh Manufacturing,Manufacturing,1720000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,South,0
-ACC0416,Reliance Logistics,Retail,119000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,East,1
-ACC0417,Apex Pharma,Healthcare,620000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,West,1
-ACC0418,Surya Constructions,Construction,2680000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,North,0
-ACC0419,Rapid Enterprises,Food & Beverage,133000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,South,1
-ACC0420,Vijay Exports,E-commerce,3760000,42,0.90,154,0.46,0.90,40,TRUE,1,FALSE,80,East,1
-ACC0421,InfoEdge Textiles,Textile,236000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,West,0
-ACC0422,Global Solutions,Technology,90000,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,Central,1
-ACC0423,Bharat Manufacturing,Manufacturing,1690000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,North,0
-ACC0424,Zenith Traders,Retail,116000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,South,1
-ACC0425,Red Pharma Pvt Ltd,Healthcare,600000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,East,1
-ACC0426,Lakshmi Constructions,Construction,2880000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,West,0
-ACC0427,Tata Enterprises,Food & Beverage,127000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,North,1
-ACC0428,Aditya Exports,E-commerce,3880000,41,0.91,157,0.48,0.91,41,TRUE,0,FALSE,82,South,1
-ACC0429,National Textiles,Textile,213000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,East,0
-ACC0430,Blue Tech,Technology,91500,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,West,1
-ACC0431,Ganesh Manufacturing,Manufacturing,1590000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,Central,0
-ACC0432,Reliance Logistics,Retail,117500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,North,1
-ACC0433,Apex Pharma,Healthcare,565000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,South,1
-ACC0434,Surya Constructions,Construction,2780000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,East,0
-ACC0435,Rapid Enterprises,Food & Beverage,136000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,West,1
-ACC0436,Vijay Exports,E-commerce,3660000,43,0.88,148,0.44,0.89,39,TRUE,1,FALSE,79,North,1
-ACC0437,InfoEdge Textiles,Textile,233000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,South,0
-ACC0438,Global Solutions Pvt Ltd,Technology,86500,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,East,1
-ACC0439,Bharat Manufacturing,Manufacturing,1630000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,West,0
-ACC0440,Zenith Traders,Retail,114500,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,Central,1
-ACC0441,Red Pharma,Healthcare,580000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,North,1
-ACC0442,Lakshmi Constructions,Construction,2980000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,South,0
-ACC0443,Tata Enterprises,Food & Beverage,130000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,East,1
-ACC0444,Aditya Exports,E-commerce,3980000,40,0.92,163,0.49,0.92,42,TRUE,0,FALSE,83,West,1
-ACC0445,National Textiles,Textile,226000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,North,0
-ACC0446,Blue Tech,Technology,93500,34,0.81,64,0.20,0.77,18,TRUE,1,FALSE,51,South,1
-ACC0447,Ganesh Manufacturing,Manufacturing,1730000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,East,0
-ACC0448,Reliance Logistics,Retail,119500,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,West,1
-ACC0449,Apex Pharma,Healthcare,625000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,North,1
-ACC0450,Surya Constructions,Construction,2700000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,South,0
-ACC0451,Rapid Enterprises,Food & Beverage,134000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,East,1
-ACC0452,Vijay Exports,E-commerce,3780000,42,0.90,154,0.46,0.90,40,TRUE,1,FALSE,80,West,1
-ACC0453,InfoEdge Textiles Pvt Ltd,Textile,238000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,Central,0
-ACC0454,Global Solutions,Technology,90500,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,North,1
-ACC0455,Bharat Manufacturing,Manufacturing,1700000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,South,0
-ACC0456,Zenith Traders,Retail,116500,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,East,1
-ACC0457,Red Pharma,Healthcare,605000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,West,1
-ACC0458,Lakshmi Constructions,Construction,2900000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,North,0
-ACC0459,Tata Enterprises,Food & Beverage,128000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,South,1
-ACC0460,Aditya Exports,E-commerce,3900000,41,0.91,158,0.48,0.91,41,TRUE,0,FALSE,82,East,1
-ACC0461,National Textiles,Textile,214000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,West,0
-ACC0462,Blue Tech,Technology,92000,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,Central,1
-ACC0463,Ganesh Manufacturing,Manufacturing,1600000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,North,0
-ACC0464,Reliance Logistics,Retail,118000,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,South,1
-ACC0465,Apex Pharma,Healthcare,570000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,East,1
-ACC0466,Surya Constructions,Construction,2800000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,West,0
-ACC0467,Rapid Enterprises,Food & Beverage,137000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,North,1
-ACC0468,Vijay Exports,E-commerce,3680000,43,0.88,148,0.44,0.89,39,TRUE,1,FALSE,79,South,1
-ACC0469,InfoEdge Textiles,Textile,235000,117,0.36,11,-0.38,0.19,4,FALSE,8,FALSE,15,East,0
-ACC0470,Global Solutions,Technology,87000,36,0.77,57,0.17,0.74,16,TRUE,1,FALSE,47,West,1
-ACC0471,Bharat Manufacturing Pvt Ltd,Manufacturing,1640000,79,0.50,38,-0.12,0.30,10,FALSE,6,TRUE,19,North,0
-ACC0472,Zenith Traders,Retail,115000,58,0.67,26,0.02,0.40,7,TRUE,3,FALSE,36,South,1
-ACC0473,Red Pharma,Healthcare,585000,39,0.80,41,0.06,0.63,12,TRUE,1,FALSE,67,East,1
-ACC0474,Lakshmi Constructions,Construction,3000000,173,0.35,6,-0.34,0.08,2,FALSE,10,TRUE,9,West,0
-ACC0475,Tata Enterprises,Food & Beverage,131000,60,0.61,30,0.00,0.43,8,FALSE,4,FALSE,30,Central,1
-ACC0476,Aditya Exports,E-commerce,4000000,40,0.92,163,0.49,0.92,42,TRUE,0,FALSE,83,North,1
-ACC0477,National Textiles,Textile,228000,123,0.33,14,-0.41,0.18,4,FALSE,9,TRUE,16,South,0
-ACC0478,Blue Tech,Technology,94000,34,0.81,64,0.20,0.77,18,TRUE,1,FALSE,51,East,1
-ACC0479,Ganesh Manufacturing,Manufacturing,1740000,89,0.48,43,-0.15,0.28,12,FALSE,7,TRUE,22,West,0
-ACC0480,Reliance Logistics,Retail,120000,56,0.70,28,0.01,0.43,7,TRUE,3,FALSE,38,North,1
-ACC0481,Apex Pharma,Healthcare,630000,37,0.81,40,0.07,0.62,12,TRUE,1,FALSE,66,South,1
-ACC0482,Surya Constructions,Construction,2720000,160,0.39,8,-0.29,0.09,3,FALSE,9,TRUE,12,East,0
-ACC0483,Rapid Enterprises,Food & Beverage,135000,62,0.59,31,-0.01,0.44,8,FALSE,4,FALSE,28,West,1
-ACC0484,Vijay Exports,E-commerce,3800000,42,0.90,154,0.46,0.90,40,TRUE,1,FALSE,80,Central,1
-ACC0485,InfoEdge Textiles,Textile,240000,113,0.35,10,-0.37,0.20,4,FALSE,8,FALSE,14,North,0
-ACC0486,Global Solutions,Technology,91000,35,0.79,59,0.18,0.75,17,TRUE,1,FALSE,49,South,1
-ACC0487,Bharat Manufacturing,Manufacturing,1710000,84,0.51,39,-0.13,0.31,11,FALSE,6,TRUE,21,East,0
-ACC0488,Zenith Traders,Retail,117000,57,0.68,27,0.00,0.41,7,TRUE,3,FALSE,37,West,1
-ACC0489,Red Pharma Pvt Ltd,Healthcare,610000,39,0.82,41,0.05,0.64,12,TRUE,1,FALSE,65,North,1
-ACC0490,Lakshmi Constructions,Construction,2920000,170,0.37,7,-0.31,0.10,2,FALSE,10,TRUE,10,South,0
-ACC0491,Tata Enterprises,Food & Beverage,129000,61,0.60,30,0.00,0.43,8,FALSE,4,FALSE,29,East,1
-ACC0492,Aditya Exports,E-commerce,3920000,41,0.91,158,0.48,0.91,41,TRUE,0,FALSE,82,West,1
-ACC0493,National Textiles,Textile,215000,120,0.34,13,-0.40,0.20,4,FALSE,9,TRUE,16,North,0
-ACC0494,Blue Tech,Technology,92500,33,0.80,62,0.19,0.78,18,TRUE,1,FALSE,50,South,1
-ACC0495,Ganesh Manufacturing,Manufacturing,1610000,87,0.52,41,-0.15,0.29,11,FALSE,6,FALSE,20,East,0
-ACC0496,Reliance Logistics,Retail,118500,57,0.69,26,0.01,0.42,7,TRUE,3,FALSE,35,West,1
-ACC0497,Apex Pharma,Healthcare,575000,38,0.83,42,0.04,0.61,12,TRUE,1,FALSE,64,Central,1
-ACC0498,Surya Constructions,Construction,2820000,164,0.38,9,-0.30,0.09,3,FALSE,10,TRUE,11,North,0
-ACC0499,Rapid Enterprises,Food & Beverage,138000,63,0.58,29,-0.02,0.45,8,FALSE,4,FALSE,28,South,1
-ACC0500,Vijay Exports,E-commerce,3700000,43,0.88,149,0.44,0.89,39,TRUE,1,FALSE,79,East,1
+ACC1000,Company_0,Textile,3343521,34,0.12,48,0.69,0.67,11,True,0,True,8,North,1
+ACC1001,Company_1,Textile,3402526,170,0.6,55,0.11,0.37,6,False,3,False,4,North,1
+ACC1002,Company_2,Textile,2316694,179,0.34,36,-0.43,0.98,21,True,3,True,4,East,1
+ACC1003,Company_3,Retail,4444186,156,0.19,154,0.08,0.8,24,False,3,True,70,North,0
+ACC1004,Company_4,Construction,2838655,115,0.5,63,0.23,0.93,4,False,8,False,9,Central,0
+ACC1005,Company_5,Healthcare,4755504,115,0.7,126,0.73,1.0,36,True,8,False,101,South,0
+ACC1006,Company_6,Textile,381802,32,0.96,185,0.25,0.49,35,False,8,False,113,South,0
+ACC1007,Company_7,Healthcare,3418409,74,0.68,185,-0.32,0.54,27,True,9,True,12,East,1
+ACC1008,Company_8,Manufacturing,4053222,91,0.56,1,-0.16,0.89,11,False,9,True,78,North,0
+ACC1009,Company_9,Healthcare,2568769,172,0.93,44,0.43,0.12,5,True,10,True,5,East,1
+ACC1010,Company_10,E-commerce,4368740,125,0.09,74,-0.28,0.59,29,True,9,False,48,West,1
+ACC1011,Company_11,E-commerce,1903102,60,0.3,83,0.17,0.61,33,False,3,True,114,North,0
+ACC1012,Company_12,E-commerce,1696902,135,0.79,179,0.47,0.62,7,True,10,True,23,South,0
+ACC1013,Company_13,E-commerce,3801981,78,0.89,153,-0.25,0.77,21,True,1,False,32,East,0
+ACC1014,Company_14,Healthcare,34689,98,0.47,18,0.73,1.0,10,False,5,False,52,South,0
+ACC1015,Company_15,E-commerce,1757426,23,0.39,55,0.74,0.06,49,False,7,False,92,West,1
+ACC1016,Company_16,E-commerce,2816756,47,0.16,82,0.2,0.74,22,False,2,False,88,North,1
+ACC1017,Company_17,Textile,3905110,139,0.18,166,-0.16,0.41,45,True,5,False,105,East,1
+ACC1018,Company_18,E-commerce,3402170,174,0.27,12,0.23,0.48,46,True,6,True,43,Central,0
+ACC1019,Company_19,Construction,1149207,123,0.75,165,-0.35,0.11,43,True,3,True,66,West,1
+ACC1020,Company_20,Construction,4351840,62,0.71,48,-0.28,0.94,31,False,0,False,76,East,0
+ACC1021,Company_21,Retail,3494934,168,0.77,160,0.07,0.48,21,False,9,True,58,North,1
+ACC1022,Company_22,Healthcare,3484042,148,0.97,37,-0.41,0.06,48,True,0,False,84,South,1
+ACC1023,Company_23,Healthcare,1811968,180,0.57,151,-0.28,0.62,5,False,6,True,54,South,1
+ACC1024,Company_24,Construction,1711059,113,0.32,70,0.02,0.44,18,False,3,False,44,South,1
+ACC1025,Company_25,Retail,3491515,17,0.75,197,-0.06,0.25,34,False,6,True,67,North,1
+ACC1026,Company_26,Healthcare,462116,110,0.54,152,0.02,0.71,32,True,5,True,98,West,1
+ACC1027,Company_27,E-commerce,4308241,94,0.41,110,0.03,0.77,7,False,7,True,29,East,0
+ACC1028,Company_28,Construction,3504283,92,0.15,6,-0.21,0.11,24,False,2,True,76,South,0
+ACC1029,Company_29,Healthcare,4921281,113,0.34,107,0.16,0.42,5,False,3,True,28,South,0
+ACC1030,Company_30,Technology,3839605,52,0.09,51,0.5,0.18,36,False,1,False,85,West,0
+ACC1031,Company_31,Healthcare,2127845,156,0.68,85,0.58,0.73,50,True,3,False,75,Central,0
+ACC1032,Company_32,Healthcare,1021133,129,0.52,53,0.76,0.57,5,True,1,True,14,South,0
+ACC1033,Company_33,Retail,2914624,166,0.56,127,0.7,0.03,47,False,2,True,99,Central,1
+ACC1034,Company_34,Technology,2757469,173,0.03,137,-0.41,0.39,13,True,2,True,10,Central,1
+ACC1035,Company_35,Healthcare,4317066,129,0.97,172,-0.26,0.87,13,True,5,False,92,East,0
+ACC1036,Company_36,Healthcare,799476,174,0.86,64,0.31,0.27,22,True,6,True,104,East,0
+ACC1037,Company_37,Healthcare,451845,81,0.14,177,0.77,0.8,34,False,10,True,57,East,0
+ACC1038,Company_38,Healthcare,4264596,116,0.72,175,0.61,0.05,6,False,8,False,24,South,1
+ACC1039,Company_39,Construction,1792609,82,0.35,155,0.1,0.2,37,False,7,True,85,North,0
+ACC1040,Company_40,Healthcare,1223027,58,0.57,141,0.63,0.05,36,False,4,True,56,West,1
+ACC1041,Company_41,Construction,4229324,169,0.9,154,-0.4,0.62,21,True,8,False,42,North,0
+ACC1042,Company_42,Textile,3843097,165,0.03,68,0.69,0.96,26,False,8,False,24,Central,0
+ACC1043,Company_43,E-commerce,1620195,85,0.76,200,-0.39,0.2,39,True,9,True,70,West,0
+ACC1044,Company_44,Textile,1815975,58,0.76,4,-0.48,0.5,35,True,1,True,27,South,1
+ACC1045,Company_45,Technology,3349641,178,0.23,156,0.55,0.41,40,False,8,True,61,Central,1
+ACC1046,Company_46,Retail,4541171,146,0.49,102,-0.48,0.87,22,True,7,False,72,West,0
+ACC1047,Company_47,Retail,3137105,45,0.68,170,0.62,0.75,16,False,6,False,115,North,1
+ACC1048,Company_48,Technology,2087330,47,0.93,111,0.43,0.41,48,True,10,True,28,North,1
+ACC1049,Company_49,Retail,4917104,66,0.34,102,-0.41,0.11,31,True,0,True,20,Central,0
+ACC1050,Company_50,Healthcare,2859042,80,0.78,5,0.74,0.74,12,False,1,True,33,North,1
+ACC1051,Company_51,Textile,883279,12,0.08,95,-0.59,0.48,21,False,0,True,60,Central,1
+ACC1052,Company_52,Construction,4112118,67,0.5,37,0.06,0.2,2,True,7,True,78,North,0
+ACC1053,Company_53,Retail,1008736,168,0.96,123,0.03,0.38,33,True,10,False,34,North,0
+ACC1054,Company_54,E-commerce,4295267,156,0.6,67,0.66,0.15,12,False,1,False,7,South,1
+ACC1055,Company_55,Construction,1894830,27,0.23,44,0.54,0.81,14,True,10,True,86,West,1
+ACC1056,Company_56,E-commerce,2078257,67,0.76,15,-0.04,0.91,9,True,4,False,41,South,1
+ACC1057,Company_57,E-commerce,289245,153,0.74,71,0.24,0.93,4,True,7,False,61,West,0
+ACC1058,Company_58,Technology,1070290,103,0.68,1,0.77,0.5,25,True,2,True,98,South,1
+ACC1059,Company_59,Textile,807002,118,0.17,23,0.41,0.22,2,True,6,True,26,East,1
+ACC1060,Company_60,Technology,2647377,46,0.43,10,0.62,0.5,33,False,2,False,30,East,0
+ACC1061,Company_61,Retail,3766808,60,0.3,67,-0.47,0.36,26,True,8,True,37,Central,1
+ACC1062,Company_62,Technology,2989164,11,0.79,154,0.76,0.0,16,True,4,False,81,East,0
+ACC1063,Company_63,E-commerce,2852176,58,0.01,90,0.62,0.35,37,True,5,True,74,Central,1
+ACC1064,Company_64,E-commerce,974044,79,0.5,194,-0.53,0.76,27,False,4,False,116,North,0
+ACC1065,Company_65,E-commerce,3141736,72,0.05,128,0.12,0.17,23,True,5,True,114,North,1
+ACC1066,Company_66,Textile,9203,62,0.11,96,-0.2,0.0,39,True,2,False,60,South,1
+ACC1067,Company_67,Technology,3952477,162,0.01,103,0.66,0.62,15,False,7,True,106,West,1
+ACC1068,Company_68,Technology,3862467,47,0.91,177,-0.39,0.56,50,True,0,True,110,West,1
+ACC1069,Company_69,Manufacturing,2101617,157,0.32,32,0.13,0.47,44,False,8,True,91,West,0
+ACC1070,Company_70,Healthcare,907970,163,0.38,10,-0.26,0.28,27,True,5,False,72,South,0
+ACC1071,Company_71,E-commerce,895919,121,0.14,5,-0.59,0.31,7,True,4,True,103,West,1
+ACC1072,Company_72,Manufacturing,4578425,112,0.02,166,-0.42,0.47,11,True,10,True,87,East,1
+ACC1073,Company_73,Construction,3628403,33,0.8,5,0.76,0.99,32,True,7,True,37,Central,1
+ACC1074,Company_74,E-commerce,463875,170,0.24,166,-0.2,0.23,20,True,1,True,95,Central,0
+ACC1075,Company_75,Technology,2511484,48,0.96,152,0.48,0.62,29,False,8,True,13,East,1
+ACC1076,Company_76,Textile,3137222,137,0.48,46,0.49,0.31,3,True,5,True,21,East,0
+ACC1077,Company_77,Textile,2473040,37,0.81,200,-0.43,0.24,1,False,10,False,26,West,1
+ACC1078,Company_78,Manufacturing,2927822,101,0.1,160,0.51,0.65,15,False,5,True,51,Central,0
+ACC1079,Company_79,E-commerce,2722769,113,0.9,125,0.8,0.81,35,True,0,False,95,Central,0
+ACC1080,Company_80,Manufacturing,2103282,64,0.23,68,0.08,0.43,5,False,0,True,29,West,0
+ACC1081,Company_81,Retail,97877,58,0.54,19,0.76,0.02,23,False,1,False,82,South,0
+ACC1082,Company_82,Healthcare,3109191,13,0.96,165,0.26,0.03,45,True,10,False,99,West,1
+ACC1083,Company_83,Technology,2805922,78,0.81,71,-0.53,0.08,3,True,1,False,117,South,1
+ACC1084,Company_84,Healthcare,3064812,143,0.16,145,0.68,0.05,27,True,8,False,75,South,0
+ACC1085,Company_85,Manufacturing,2936317,28,0.45,188,0.46,0.84,11,False,2,True,95,North,0
+ACC1086,Company_86,Technology,2674867,109,0.22,56,-0.51,0.16,8,True,8,False,49,North,0
+ACC1087,Company_87,Textile,3334512,121,0.06,82,-0.39,0.75,19,True,1,False,29,South,1
+ACC1088,Company_88,Technology,1150899,81,0.38,76,-0.36,0.38,36,False,1,False,34,West,1
+ACC1089,Company_89,Technology,3199972,169,0.14,47,-0.46,0.45,24,True,0,False,94,South,0
+ACC1090,Company_90,Retail,1135219,44,0.34,6,0.36,0.72,45,False,4,True,113,South,0
+ACC1091,Company_91,Construction,3486466,139,0.61,177,-0.17,0.66,39,True,6,True,51,North,1
+ACC1092,Company_92,Manufacturing,1180255,113,0.73,59,0.09,0.55,44,True,8,True,112,North,0
+ACC1093,Company_93,Manufacturing,1938384,65,0.25,184,-0.24,0.02,24,True,6,False,90,North,1
+ACC1094,Company_94,Healthcare,3975888,12,0.9,155,0.57,0.86,49,False,9,False,5,South,0
+ACC1095,Company_95,Retail,3453038,124,0.72,21,-0.38,0.59,41,True,2,True,85,South,0
+ACC1096,Company_96,Construction,2125722,17,0.09,139,0.01,0.37,16,False,1,True,75,West,0
+ACC1097,Company_97,E-commerce,1961961,15,0.39,128,-0.17,0.21,31,True,0,False,59,South,1
+ACC1098,Company_98,Manufacturing,852148,63,0.64,27,-0.39,0.74,46,False,1,False,12,South,1
+ACC1099,Company_99,Manufacturing,3347866,21,0.91,5,-0.04,0.6,26,False,6,False,39,West,0
+ACC1100,Company_100,Manufacturing,2904479,75,0.34,40,-0.04,0.35,10,True,2,False,30,North,0
+ACC1101,Company_101,Healthcare,221720,137,0.71,148,-0.07,0.54,22,False,10,False,35,Central,1
+ACC1102,Company_102,Textile,2445884,106,0.53,52,-0.57,0.42,33,True,2,False,43,East,0
+ACC1103,Company_103,E-commerce,2776856,68,0.83,92,0.08,0.58,8,False,3,False,111,Central,1
+ACC1104,Company_104,Construction,2182668,129,0.71,15,0.78,0.91,2,False,4,True,29,East,1
+ACC1105,Company_105,Construction,2215829,180,0.95,146,-0.24,0.52,30,True,2,True,25,East,0
+ACC1106,Company_106,Retail,2638346,149,0.38,141,0.25,0.28,42,False,9,True,108,West,0
+ACC1107,Company_107,Healthcare,2974022,13,0.93,7,-0.27,0.77,40,True,8,False,72,West,1
+ACC1108,Company_108,Technology,4087422,91,0.7,28,-0.35,0.33,50,True,6,True,92,North,1
+ACC1109,Company_109,Textile,257585,87,0.01,87,0.04,0.78,29,False,4,False,105,East,0
+ACC1110,Company_110,Manufacturing,1036990,44,0.29,191,0.79,0.54,40,True,1,False,34,North,1
+ACC1111,Company_111,Manufacturing,4492128,169,0.07,48,0.5,0.01,5,False,8,False,46,East,1
+ACC1112,Company_112,Technology,2032000,169,0.03,114,0.48,0.13,24,False,10,False,40,North,1
+ACC1113,Company_113,Textile,4094432,123,0.83,30,-0.27,0.59,30,True,0,True,31,West,0
+ACC1114,Company_114,Textile,646422,16,0.08,48,-0.57,0.59,22,True,2,False,44,West,0
+ACC1115,Company_115,Textile,3633948,66,0.58,27,0.09,0.54,7,True,7,True,43,North,1
+ACC1116,Company_116,Healthcare,1042864,87,0.76,6,0.14,0.34,12,True,3,False,98,Central,0
+ACC1117,Company_117,Textile,4584673,148,0.26,32,0.26,0.43,41,False,3,False,61,South,1
+ACC1118,Company_118,Textile,2487625,81,0.75,31,0.15,0.24,13,False,4,True,53,South,1
+ACC1119,Company_119,Retail,4753330,120,0.12,30,-0.46,0.66,40,False,9,True,117,West,0
+ACC1120,Company_120,Retail,4251896,111,0.46,7,-0.39,0.82,24,False,6,False,12,Central,1
+ACC1121,Company_121,Technology,3573746,172,0.53,131,0.02,1.0,39,True,9,False,87,South,1
+ACC1122,Company_122,Textile,1945279,154,0.41,83,-0.41,0.39,11,True,10,True,15,West,0
+ACC1123,Company_123,Construction,3960023,174,0.47,198,0.05,0.64,23,False,6,True,95,North,1
+ACC1124,Company_124,E-commerce,4791021,21,0.05,123,0.26,0.78,14,True,5,True,56,North,0
+ACC1125,Company_125,Healthcare,52709,61,0.57,118,0.75,0.02,28,False,1,False,61,North,1
+ACC1126,Company_126,Healthcare,4403454,148,0.44,91,0.05,0.98,38,True,6,False,84,South,1
+ACC1127,Company_127,Healthcare,4139181,149,0.3,75,-0.15,0.83,47,True,3,False,76,North,1
+ACC1128,Company_128,Retail,2491150,131,0.49,173,-0.19,0.5,37,True,3,False,28,South,1
+ACC1129,Company_129,Textile,3551712,169,0.03,30,0.15,0.47,34,False,5,False,72,East,1
+ACC1130,Company_130,Textile,3339824,31,0.24,25,-0.07,0.6,38,True,0,False,27,Central,1
+ACC1131,Company_131,Healthcare,4524043,34,0.97,109,0.7,0.38,49,False,1,True,109,North,0
+ACC1132,Company_132,Technology,4913886,158,0.03,79,-0.59,0.18,36,False,8,True,46,West,1
+ACC1133,Company_133,Retail,2673759,49,0.81,73,0.45,0.74,19,True,9,True,99,East,1
+ACC1134,Company_134,E-commerce,4501223,84,0.36,163,-0.15,0.33,17,True,1,False,15,South,0
+ACC1135,Company_135,Construction,196630,82,0.53,144,0.52,0.95,33,False,7,False,86,West,0
+ACC1136,Company_136,Manufacturing,1988405,27,0.66,55,-0.4,0.45,12,True,1,False,108,South,0
+ACC1137,Company_137,Textile,2773456,42,0.44,26,0.17,0.48,27,True,8,True,76,Central,1
+ACC1138,Company_138,E-commerce,902605,147,0.47,110,0.71,0.93,50,True,4,False,71,South,0
+ACC1139,Company_139,Technology,1753476,89,0.03,180,0.74,0.27,48,True,3,True,21,South,0
+ACC1140,Company_140,Healthcare,131619,140,0.26,28,-0.17,0.54,29,True,2,True,29,South,0
+ACC1141,Company_141,Healthcare,3973108,117,0.23,77,0.73,0.71,44,True,10,False,116,West,0
+ACC1142,Company_142,Retail,1667144,141,0.86,132,0.14,0.14,16,False,3,True,60,North,0
+ACC1143,Company_143,Textile,182229,11,0.25,7,0.19,0.61,43,False,0,False,75,South,1
+ACC1144,Company_144,Technology,3556700,42,0.19,78,0.73,0.32,16,True,6,True,93,South,0
+ACC1145,Company_145,Manufacturing,3165023,146,0.59,182,0.27,0.98,30,False,8,False,65,Central,1
+ACC1146,Company_146,Retail,3525496,25,0.11,95,0.73,0.97,17,True,5,False,57,North,0
+ACC1147,Company_147,Retail,1067143,124,0.75,77,-0.55,0.85,32,False,8,True,78,Central,0
+ACC1148,Company_148,Retail,2942677,166,0.72,66,0.01,0.71,50,False,1,False,8,South,1
+ACC1149,Company_149,Healthcare,2833957,125,0.42,155,0.17,0.23,19,False,6,False,79,West,1
+ACC1150,Company_150,Healthcare,784603,88,0.21,49,0.05,0.13,12,False,10,False,25,Central,1
+ACC1151,Company_151,Construction,4772977,162,0.24,192,-0.25,0.79,21,True,4,True,105,West,1
+ACC1152,Company_152,Textile,4667823,105,0.46,143,0.3,0.75,4,True,10,False,91,Central,0
+ACC1153,Company_153,Retail,3241180,132,0.44,130,-0.05,0.89,8,False,3,False,113,Central,1
+ACC1154,Company_154,Technology,4589654,73,0.63,161,0.25,0.14,6,True,3,False,84,North,0
+ACC1155,Company_155,Healthcare,970792,56,0.38,42,0.09,0.62,34,True,1,True,91,Central,1
+ACC1156,Company_156,Textile,3015430,85,0.19,29,-0.07,0.52,28,False,7,True,58,North,0
+ACC1157,Company_157,Construction,2940342,14,0.53,16,0.69,0.45,45,False,8,True,43,North,1
+ACC1158,Company_158,Manufacturing,4725779,77,0.11,43,-0.39,0.83,13,False,10,True,88,West,0
+ACC1159,Company_159,Retail,3138960,21,0.5,175,-0.52,0.61,20,False,4,False,50,Central,0
+ACC1160,Company_160,Manufacturing,4406026,167,0.88,199,-0.16,0.02,18,True,2,True,89,Central,1
+ACC1161,Company_161,Healthcare,4623745,15,0.71,7,0.15,0.89,4,False,6,True,55,South,0
+ACC1162,Company_162,Construction,4629506,136,0.39,113,0.14,0.99,8,False,9,True,68,Central,1
+ACC1163,Company_163,Construction,2912769,17,0.18,180,-0.21,0.7,16,True,1,True,42,Central,1
+ACC1164,Company_164,Textile,999215,63,0.09,105,0.72,0.54,10,True,6,False,115,South,1
+ACC1165,Company_165,E-commerce,2754789,88,0.34,137,-0.27,0.66,30,False,0,True,70,North,1
+ACC1166,Company_166,Textile,3319070,21,0.61,98,0.61,0.6,25,False,5,True,46,Central,0
+ACC1167,Company_167,Textile,2268744,37,0.85,84,-0.19,0.51,42,True,3,False,33,Central,1
+ACC1168,Company_168,Retail,1607550,38,0.76,79,0.37,0.72,17,True,5,False,10,Central,0
+ACC1169,Company_169,E-commerce,4263840,125,0.82,99,0.45,0.72,19,True,3,True,98,West,0
+ACC1170,Company_170,Manufacturing,2466256,53,0.54,191,0.03,0.25,47,True,1,True,95,Central,1
+ACC1171,Company_171,E-commerce,4254200,69,0.28,197,0.37,0.83,3,True,1,False,60,Central,0
+ACC1172,Company_172,Retail,1202153,126,0.44,18,0.2,0.62,22,True,0,False,105,North,0
+ACC1173,Company_173,Construction,2930386,100,0.07,110,0.35,0.38,10,True,1,True,58,South,0
+ACC1174,Company_174,Healthcare,2173636,95,0.29,92,0.66,0.41,19,False,5,False,117,South,0
+ACC1175,Company_175,Construction,511326,133,0.05,33,-0.57,0.37,7,True,6,True,73,East,0
+ACC1176,Company_176,Healthcare,2790235,31,0.13,189,0.43,0.16,29,False,6,False,77,South,1
+ACC1177,Company_177,Healthcare,3457321,153,0.42,122,0.73,0.69,10,True,5,False,7,West,0
+ACC1178,Company_178,Technology,1158460,157,0.37,34,0.05,0.54,22,True,4,False,65,South,0
+ACC1179,Company_179,Construction,4324778,163,0.73,117,-0.26,0.33,46,False,8,True,78,South,1
+ACC1180,Company_180,Healthcare,2179027,28,0.53,156,0.71,0.23,29,False,5,False,63,Central,1
+ACC1181,Company_181,Manufacturing,685994,89,0.7,105,0.31,0.11,20,True,4,False,76,West,1
+ACC1182,Company_182,Retail,621481,81,0.45,39,0.6,0.41,45,False,5,True,71,West,0
+ACC1183,Company_183,Construction,131570,130,0.01,45,0.73,0.77,46,True,9,False,30,West,1
+ACC1184,Company_184,Construction,3750468,62,0.03,176,0.19,0.38,44,False,6,True,16,North,1
+ACC1185,Company_185,E-commerce,3098958,69,0.35,52,-0.53,0.22,21,False,1,True,36,Central,0
+ACC1186,Company_186,Technology,2144744,91,0.66,9,0.24,0.64,3,False,7,False,110,Central,1
+ACC1187,Company_187,E-commerce,2283262,18,0.96,72,-0.15,0.96,47,True,6,True,88,South,0
+ACC1188,Company_188,Manufacturing,4166164,95,0.48,75,-0.25,0.96,34,False,4,False,10,East,0
+ACC1189,Company_189,Construction,955592,24,0.93,126,-0.22,0.88,15,False,9,False,79,South,1
+ACC1190,Company_190,Technology,1998640,41,0.98,115,-0.21,0.72,46,True,3,True,20,Central,0
+ACC1191,Company_191,Manufacturing,3303480,112,0.11,185,-0.23,0.44,12,True,7,True,110,West,0
+ACC1192,Company_192,Manufacturing,2602118,104,0.66,11,-0.5,0.9,20,True,10,True,93,South,1
+ACC1193,Company_193,Manufacturing,2862423,73,0.93,14,0.6,0.03,38,False,8,False,90,South,0
+ACC1194,Company_194,Construction,530894,134,0.15,14,0.71,0.36,46,False,7,False,109,North,0
+ACC1195,Company_195,Manufacturing,1968550,86,0.87,42,-0.44,0.27,34,True,5,True,52,West,1
+ACC1196,Company_196,Retail,1742037,84,0.87,41,0.35,0.65,44,False,5,True,44,East,0
+ACC1197,Company_197,Technology,717989,85,0.09,157,-0.43,0.84,46,False,2,False,8,West,0
+ACC1198,Company_198,Retail,2725490,15,0.1,186,-0.03,0.31,24,False,5,False,15,South,1
+ACC1199,Company_199,Construction,3282913,45,0.15,145,-0.32,0.31,17,False,2,True,72,South,1
+ACC1200,Company_200,Construction,382381,97,0.29,67,0.59,0.11,20,False,2,False,43,East,0
+ACC1201,Company_201,Manufacturing,4442824,145,0.37,157,-0.41,0.71,17,True,5,True,37,South,0
+ACC1202,Company_202,E-commerce,1951169,132,0.59,76,0.77,0.33,4,True,8,False,87,West,1
+ACC1203,Company_203,Healthcare,100162,17,0.86,92,0.07,0.74,32,False,6,True,91,South,0
+ACC1204,Company_204,Healthcare,415668,103,0.22,76,0.36,0.23,17,True,5,True,113,East,0
+ACC1205,Company_205,Technology,1038217,83,0.75,163,-0.49,0.18,17,True,10,False,106,East,0
+ACC1206,Company_206,Construction,793393,146,0.34,180,0.27,0.53,19,False,3,False,30,West,1
+ACC1207,Company_207,Retail,2457191,101,0.07,196,0.1,0.66,14,False,0,True,25,East,0
+ACC1208,Company_208,Construction,3049404,118,0.89,78,0.02,0.92,37,False,9,False,79,North,1
+ACC1209,Company_209,Textile,615505,79,0.09,138,0.23,0.75,21,False,1,True,116,Central,1
+ACC1210,Company_210,Manufacturing,1087188,86,0.49,79,-0.5,0.49,38,True,2,True,65,South,1
+ACC1211,Company_211,Technology,1818428,42,0.01,91,-0.24,0.03,38,False,1,True,107,West,0
+ACC1212,Company_212,Healthcare,4805194,93,0.92,130,-0.1,0.73,28,False,8,False,66,West,1
+ACC1213,Company_213,E-commerce,2149041,104,0.06,153,-0.42,0.6,2,False,4,True,34,East,1
+ACC1214,Company_214,Retail,1987541,28,0.59,8,0.56,0.21,38,False,4,True,93,Central,0
+ACC1215,Company_215,Manufacturing,4336231,113,0.66,185,0.09,0.07,49,False,6,False,109,East,1
+ACC1216,Company_216,Textile,4039626,37,0.85,101,0.14,0.83,50,True,6,False,5,Central,0
+ACC1217,Company_217,Technology,757838,129,0.32,160,-0.2,0.35,15,True,9,False,76,Central,0
+ACC1218,Company_218,Retail,3042717,45,0.64,97,0.29,0.2,30,False,2,True,112,North,1
+ACC1219,Company_219,Construction,2562904,33,0.16,184,0.0,0.7,33,False,1,True,75,South,1
+ACC1220,Company_220,Construction,3949476,51,0.82,50,0.03,1.0,6,True,4,False,65,West,0
+ACC1221,Company_221,Construction,3010404,74,0.02,49,0.15,0.78,21,False,10,False,95,Central,1
+ACC1222,Company_222,E-commerce,528136,162,0.35,44,-0.42,0.6,4,False,8,False,106,South,1
+ACC1223,Company_223,Construction,2834707,104,0.47,198,0.42,0.2,40,True,7,False,80,North,0
+ACC1224,Company_224,Retail,319009,24,0.29,8,0.38,0.75,36,True,3,False,84,Central,1
+ACC1225,Company_225,Textile,4714304,40,0.81,173,-0.01,0.22,13,True,10,False,8,South,1
+ACC1226,Company_226,Technology,4892854,64,0.34,108,-0.06,0.65,29,False,9,False,48,South,1
+ACC1227,Company_227,Technology,4389863,148,0.15,73,-0.1,0.61,30,True,10,True,52,Central,1
+ACC1228,Company_228,Retail,1392375,164,0.37,162,-0.44,0.54,34,False,3,False,21,West,1
+ACC1229,Company_229,E-commerce,4507618,166,0.53,120,0.67,0.35,25,True,6,False,116,Central,0
+ACC1230,Company_230,Technology,3326802,35,0.51,195,0.67,0.93,45,False,7,True,18,East,0
+ACC1231,Company_231,Technology,2892413,161,0.36,194,0.56,0.85,33,True,9,True,73,West,0
+ACC1232,Company_232,Technology,4241552,125,0.51,37,0.38,0.64,25,False,6,True,62,West,0
+ACC1233,Company_233,Retail,364772,150,0.53,156,0.7,0.45,28,False,7,True,101,West,1
+ACC1234,Company_234,Retail,4346878,31,0.22,186,-0.58,0.66,41,True,3,True,44,North,1
+ACC1235,Company_235,Technology,1230485,30,0.57,177,0.43,0.29,4,False,5,True,61,Central,1
+ACC1236,Company_236,Retail,1414495,31,0.86,162,-0.1,0.33,23,False,2,False,54,North,0
+ACC1237,Company_237,Technology,1584832,92,0.33,192,0.23,0.85,45,True,9,False,19,West,0
+ACC1238,Company_238,Healthcare,4694399,72,0.22,78,0.61,0.03,32,True,4,False,24,North,0
+ACC1239,Company_239,Healthcare,2162705,38,0.84,121,0.41,0.9,7,True,4,False,83,West,0
+ACC1240,Company_240,Textile,2650644,100,0.29,116,0.77,0.96,24,False,5,True,71,North,0
+ACC1241,Company_241,Healthcare,2922609,32,0.59,119,0.36,0.44,48,False,0,False,51,West,0
+ACC1242,Company_242,Healthcare,2362774,28,0.3,65,-0.29,0.65,22,True,1,True,106,West,1
+ACC1243,Company_243,Retail,4207817,179,0.64,185,-0.25,0.85,48,True,8,True,35,East,1
+ACC1244,Company_244,Retail,2463245,87,0.47,85,-0.59,0.24,22,True,6,False,89,North,0
+ACC1245,Company_245,E-commerce,1598432,179,0.49,163,0.15,0.64,1,False,9,True,40,North,0
+ACC1246,Company_246,Healthcare,4536177,89,0.56,174,-0.43,0.38,45,False,2,False,103,West,1
+ACC1247,Company_247,Manufacturing,4548286,141,0.22,196,0.08,0.49,14,False,4,True,85,South,0
+ACC1248,Company_248,E-commerce,900980,45,0.97,141,-0.5,0.3,2,True,0,True,36,North,0
+ACC1249,Company_249,Healthcare,216741,173,0.89,146,-0.45,0.26,12,True,8,False,21,Central,1
+ACC1250,Company_250,E-commerce,758848,49,0.21,156,-0.21,0.79,17,False,6,False,43,East,1
+ACC1251,Company_251,E-commerce,3897798,52,0.77,133,0.26,0.63,44,True,2,True,66,West,1
+ACC1252,Company_252,Technology,1144802,164,0.58,146,0.68,0.27,37,False,2,False,66,North,0
+ACC1253,Company_253,Textile,4987794,42,0.96,117,0.05,0.68,25,False,7,False,15,West,1
+ACC1254,Company_254,Construction,1392524,113,0.73,40,-0.09,0.98,38,True,2,False,72,West,0
+ACC1255,Company_255,Healthcare,4348223,160,0.96,97,0.8,0.28,40,True,2,True,113,Central,0
+ACC1256,Company_256,E-commerce,3926825,118,0.78,127,0.78,0.44,35,False,9,True,13,South,0
+ACC1257,Company_257,Manufacturing,375888,161,0.14,88,0.24,0.28,47,False,1,True,54,South,1
+ACC1258,Company_258,Technology,4127999,30,0.46,170,-0.24,0.22,47,False,9,True,98,East,1
+ACC1259,Company_259,Textile,2358330,180,0.8,87,-0.18,0.09,6,True,1,True,97,South,1
+ACC1260,Company_260,Retail,4621072,117,0.16,95,0.03,0.09,50,False,9,False,9,South,0
+ACC1261,Company_261,Manufacturing,4007076,125,0.03,154,-0.03,0.12,46,True,0,True,54,East,1
+ACC1262,Company_262,Manufacturing,2841910,76,0.96,132,0.8,0.49,3,False,1,True,82,East,0
+ACC1263,Company_263,E-commerce,2282924,96,0.27,120,0.72,0.21,6,False,5,True,32,East,0
+ACC1264,Company_264,Technology,3038933,125,0.18,186,0.21,0.01,31,True,6,False,93,West,1
+ACC1265,Company_265,E-commerce,3629374,177,0.47,97,-0.07,0.84,9,True,6,True,119,West,1
+ACC1266,Company_266,Retail,2955869,139,0.41,130,0.44,0.2,32,True,6,False,97,South,0
+ACC1267,Company_267,Manufacturing,4569007,81,0.49,114,0.18,0.68,32,True,10,False,61,Central,0
+ACC1268,Company_268,Construction,4927144,90,0.81,97,0.19,0.19,20,True,6,True,69,North,0
+ACC1269,Company_269,E-commerce,4267722,26,0.88,128,0.77,0.53,25,True,6,True,90,Central,1
+ACC1270,Company_270,Technology,4689657,169,0.64,34,-0.48,0.67,8,False,5,False,18,South,1
+ACC1271,Company_271,Textile,2279366,21,0.51,166,-0.36,0.84,35,True,0,True,112,South,0
+ACC1272,Company_272,Textile,2760216,175,0.34,137,0.6,0.54,46,False,8,False,25,East,0
+ACC1273,Company_273,E-commerce,3759080,164,0.49,126,0.09,0.73,27,False,0,False,20,Central,0
+ACC1274,Company_274,E-commerce,1630779,24,0.59,8,-0.43,0.96,11,False,5,True,12,Central,1
+ACC1275,Company_275,Technology,924780,150,0.65,57,-0.29,0.09,33,False,8,False,119,South,1
+ACC1276,Company_276,Healthcare,3735987,24,0.96,66,0.14,0.6,14,False,2,False,45,East,1
+ACC1277,Company_277,Healthcare,2482131,167,0.71,162,0.77,0.61,49,True,0,True,34,South,0
+ACC1278,Company_278,E-commerce,1527608,116,0.97,136,0.36,0.79,13,False,6,False,81,West,1
+ACC1279,Company_279,Healthcare,760769,103,0.53,60,-0.17,0.49,35,True,0,False,13,West,0
+ACC1280,Company_280,Retail,1379729,88,0.69,190,-0.48,0.38,21,True,2,True,70,West,1
+ACC1281,Company_281,Technology,755085,61,0.92,99,0.71,0.12,50,False,3,False,118,West,0
+ACC1282,Company_282,Technology,2493186,20,0.81,6,0.13,0.56,32,True,4,False,9,North,1
+ACC1283,Company_283,Textile,1526411,13,0.56,59,0.75,0.76,19,False,5,False,41,South,1
+ACC1284,Company_284,Technology,1829142,21,0.5,30,0.01,0.35,16,False,6,False,99,Central,0
+ACC1285,Company_285,E-commerce,3667380,114,0.97,91,-0.22,0.98,44,True,4,True,35,North,1
+ACC1286,Company_286,Textile,3361713,75,1.0,56,0.24,0.88,13,True,3,True,58,East,0
+ACC1287,Company_287,Textile,2152392,148,0.45,46,-0.04,0.96,27,True,4,False,120,West,1
+ACC1288,Company_288,Healthcare,3444839,52,0.9,64,0.34,0.64,35,True,4,True,85,North,1
+ACC1289,Company_289,Textile,3859385,180,0.35,112,0.69,0.06,43,False,3,True,67,Central,0
+ACC1290,Company_290,Construction,1440712,24,0.06,73,0.22,0.72,25,False,8,True,109,West,1
+ACC1291,Company_291,Textile,3571680,157,0.61,193,0.33,0.61,15,True,3,True,108,Central,1
+ACC1292,Company_292,Technology,3946907,138,0.13,151,-0.07,0.29,18,True,1,True,66,East,1
+ACC1293,Company_293,Retail,1496052,144,0.37,85,0.54,0.18,46,True,0,True,112,South,0
+ACC1294,Company_294,Healthcare,1496863,42,0.79,46,-0.09,0.72,48,True,8,False,29,North,1
+ACC1295,Company_295,Technology,3220530,66,0.11,127,0.11,0.39,33,True,8,True,40,Central,1
+ACC1296,Company_296,E-commerce,1403630,102,0.13,30,-0.55,0.03,25,False,0,False,21,South,1
+ACC1297,Company_297,Technology,1361206,42,0.35,181,0.11,0.16,27,True,5,True,47,Central,0
+ACC1298,Company_298,Retail,3916309,175,0.53,75,0.57,0.92,28,True,0,False,46,Central,0
+ACC1299,Company_299,Textile,3205798,106,0.32,125,0.55,0.05,31,True,9,False,57,Central,1
+ACC1300,Company_300,Retail,4259020,154,0.39,47,-0.42,0.73,27,True,9,True,70,North,0
+ACC1301,Company_301,Construction,3012201,38,0.54,126,-0.19,0.01,6,False,7,True,52,West,0
+ACC1302,Company_302,E-commerce,3693392,11,0.93,78,0.63,0.89,39,True,9,True,64,West,1
+ACC1303,Company_303,Construction,1395871,95,0.32,75,-0.19,0.3,18,True,2,True,114,West,1
+ACC1304,Company_304,Construction,3947895,74,0.7,101,-0.15,0.87,22,True,2,False,42,South,0
+ACC1305,Company_305,Healthcare,215179,148,0.84,57,0.06,0.52,29,False,0,True,70,West,1
+ACC1306,Company_306,Manufacturing,128593,82,0.78,93,0.45,0.45,43,True,7,True,50,North,0
+ACC1307,Company_307,Retail,3671799,150,0.54,126,0.59,0.92,11,False,9,False,102,East,0
+ACC1308,Company_308,Technology,3285574,67,0.55,134,-0.16,0.65,7,True,9,False,94,Central,0
+ACC1309,Company_309,Retail,1494924,119,0.81,120,0.36,0.92,39,True,2,True,34,South,0
+ACC1310,Company_310,Textile,397572,21,0.41,16,0.52,0.43,9,True,3,True,84,Central,1
+ACC1311,Company_311,Construction,3148233,178,0.85,135,0.43,0.03,21,True,10,True,46,South,0
+ACC1312,Company_312,E-commerce,509421,139,0.22,52,0.01,0.32,38,False,7,False,113,East,0
+ACC1313,Company_313,Textile,247876,81,0.14,139,0.31,0.55,33,False,7,True,118,East,1
+ACC1314,Company_314,Retail,1421264,153,0.22,132,0.42,0.7,44,False,9,True,116,North,0
+ACC1315,Company_315,Construction,4099037,86,0.59,159,0.5,0.1,6,False,1,False,117,East,0
+ACC1316,Company_316,Technology,3347266,35,0.64,89,0.72,0.75,15,False,5,False,103,South,1
+ACC1317,Company_317,E-commerce,2415921,148,0.94,32,0.08,0.27,40,False,2,True,49,West,1
+ACC1318,Company_318,Textile,2755412,57,0.3,6,-0.24,0.38,23,False,5,False,95,East,0
+ACC1319,Company_319,E-commerce,1607380,100,0.41,57,-0.29,0.47,9,False,10,True,11,West,1
+ACC1320,Company_320,Textile,1575941,137,0.49,49,0.18,0.35,26,False,6,False,62,South,1
+ACC1321,Company_321,Textile,671319,47,0.84,58,-0.49,0.42,40,False,9,False,58,North,0
+ACC1322,Company_322,E-commerce,1236432,127,0.7,90,0.02,0.97,1,True,10,True,82,East,0
+ACC1323,Company_323,Healthcare,4982654,17,0.75,102,0.34,0.98,49,False,1,False,84,East,1
+ACC1324,Company_324,E-commerce,4351723,114,0.56,167,-0.34,0.66,32,False,2,True,60,East,1
+ACC1325,Company_325,Construction,382047,35,0.41,122,0.29,0.04,23,False,10,False,120,Central,1
+ACC1326,Company_326,E-commerce,2744075,42,0.71,17,-0.35,0.3,49,False,2,False,101,North,1
+ACC1327,Company_327,Technology,4832889,58,0.67,105,0.16,0.02,16,True,9,True,102,East,0
+ACC1328,Company_328,Technology,2676668,54,0.46,58,-0.47,0.1,17,True,0,False,82,Central,1
+ACC1329,Company_329,Retail,551639,103,0.5,137,0.72,0.15,32,True,5,True,96,Central,0
+ACC1330,Company_330,Technology,3921814,67,0.13,13,0.16,0.77,49,False,7,False,76,Central,1
+ACC1331,Company_331,E-commerce,918600,16,0.07,25,0.0,0.19,3,True,2,False,68,West,1
+ACC1332,Company_332,E-commerce,2007182,94,0.95,136,-0.58,0.13,33,False,10,True,83,Central,0
+ACC1333,Company_333,Construction,2413932,46,0.76,21,-0.22,0.18,11,False,3,False,101,North,1
+ACC1334,Company_334,Textile,2060121,128,0.32,134,0.14,0.58,1,True,3,False,17,West,1
+ACC1335,Company_335,Textile,3034314,11,0.96,192,-0.02,0.95,49,True,5,True,99,West,0
+ACC1336,Company_336,Construction,3442203,127,0.7,22,0.28,0.56,18,True,7,True,55,South,1
+ACC1337,Company_337,Construction,4577402,126,0.93,76,0.16,0.72,16,False,2,False,26,South,1
+ACC1338,Company_338,Manufacturing,2037190,95,0.93,47,-0.44,0.75,44,False,3,False,84,East,0
+ACC1339,Company_339,Retail,4744058,40,0.05,199,0.17,0.27,47,False,0,True,6,Central,1
+ACC1340,Company_340,Manufacturing,461414,90,0.74,121,0.31,0.36,4,False,7,False,101,Central,0
+ACC1341,Company_341,Technology,4410979,179,0.34,11,-0.48,0.72,38,False,10,False,71,East,0
+ACC1342,Company_342,Manufacturing,1948455,82,0.99,130,0.18,0.59,7,False,1,False,88,Central,1
+ACC1343,Company_343,Technology,2626910,71,0.87,182,-0.4,0.32,15,False,4,False,79,South,1
+ACC1344,Company_344,Construction,2340691,73,0.24,57,-0.06,0.91,49,True,9,False,79,South,0
+ACC1345,Company_345,Manufacturing,2792363,92,0.81,66,-0.35,0.75,11,False,0,False,42,Central,0
+ACC1346,Company_346,Technology,632120,123,0.59,96,0.11,0.67,1,True,1,False,25,West,0
+ACC1347,Company_347,Textile,634306,180,0.96,145,0.22,0.92,27,True,2,False,43,North,1
+ACC1348,Company_348,Retail,1643214,179,0.66,141,0.44,0.03,29,False,1,False,3,South,1
+ACC1349,Company_349,Retail,457714,94,0.1,76,0.63,0.17,4,False,8,True,78,North,1
+ACC1350,Company_350,E-commerce,1437099,104,0.18,1,0.45,0.3,8,True,9,False,48,West,0
+ACC1351,Company_351,Construction,3779299,16,0.85,13,-0.2,0.73,32,True,4,False,3,East,0
+ACC1352,Company_352,Retail,1874106,180,0.8,83,0.4,0.83,24,False,8,False,90,South,0
+ACC1353,Company_353,Textile,1573009,24,0.02,181,0.26,0.39,41,False,7,True,89,West,1
+ACC1354,Company_354,Technology,3143684,15,0.41,151,0.39,0.54,20,False,4,True,62,East,1
+ACC1355,Company_355,E-commerce,4510199,12,0.1,176,0.31,0.38,20,False,6,True,100,South,1
+ACC1356,Company_356,Textile,1509935,142,0.26,181,-0.05,0.34,2,True,3,True,82,West,1
+ACC1357,Company_357,Healthcare,4477642,86,0.29,4,-0.49,0.91,35,True,9,True,120,Central,0
+ACC1358,Company_358,Construction,2179755,148,0.5,82,0.75,0.19,37,False,10,False,119,West,1
+ACC1359,Company_359,Manufacturing,2696076,86,0.53,194,-0.52,0.62,11,False,5,False,103,South,0
+ACC1360,Company_360,E-commerce,3572900,112,0.41,125,0.32,0.17,24,True,4,False,45,East,1
+ACC1361,Company_361,Manufacturing,3149233,155,0.12,76,0.48,0.9,7,False,4,True,10,Central,1
+ACC1362,Company_362,Construction,4793083,48,0.38,105,0.09,0.87,18,False,10,False,85,West,0
+ACC1363,Company_363,Textile,4427421,40,0.4,116,0.54,0.26,18,False,1,True,92,East,1
+ACC1364,Company_364,E-commerce,2594041,79,0.31,185,0.36,0.06,42,True,0,True,14,Central,1
+ACC1365,Company_365,Manufacturing,3733946,49,0.87,4,-0.56,0.11,15,False,0,True,67,East,0
+ACC1366,Company_366,Textile,3312080,149,0.39,85,0.32,0.96,35,False,5,True,94,West,0
+ACC1367,Company_367,Retail,864638,55,0.45,164,0.33,0.37,12,False,9,True,112,North,0
+ACC1368,Company_368,Healthcare,3613654,64,0.5,119,-0.25,0.75,46,True,2,False,116,South,0
+ACC1369,Company_369,Technology,2139796,42,0.85,149,-0.39,0.77,16,True,1,True,8,West,0
+ACC1370,Company_370,Technology,4661705,139,0.44,44,-0.32,0.81,41,False,5,False,93,North,0
+ACC1371,Company_371,Manufacturing,3965526,40,0.9,130,0.36,0.26,18,False,8,False,116,North,1
+ACC1372,Company_372,Textile,688378,109,0.59,145,-0.03,0.75,49,True,9,False,5,Central,1
+ACC1373,Company_373,Manufacturing,3191917,88,0.87,22,0.09,0.02,48,False,5,True,98,West,1
+ACC1374,Company_374,Construction,2938562,132,0.63,19,0.65,0.86,2,False,1,False,89,South,1
+ACC1375,Company_375,E-commerce,1523517,81,0.51,136,-0.49,0.14,8,False,10,False,61,West,0
+ACC1376,Company_376,Healthcare,2406752,138,0.16,156,-0.02,0.01,37,False,3,True,61,West,1
+ACC1377,Company_377,Technology,1594488,151,0.46,14,-0.16,0.68,30,True,8,False,43,North,0
+ACC1378,Company_378,Healthcare,4398462,12,0.37,21,0.42,0.52,4,False,10,True,119,Central,0
+ACC1379,Company_379,Construction,4985367,17,0.18,176,-0.37,0.49,26,False,7,True,35,South,1
+ACC1380,Company_380,Technology,4672481,20,0.3,26,-0.01,0.84,9,False,3,False,43,South,1
+ACC1381,Company_381,Healthcare,2023186,125,0.88,42,0.27,0.75,48,False,5,False,99,East,1
+ACC1382,Company_382,Technology,3862724,53,0.6,146,0.46,0.05,14,True,3,False,32,South,0
+ACC1383,Company_383,Technology,1037871,96,0.31,161,0.39,0.61,33,True,5,True,3,West,0
+ACC1384,Company_384,Textile,3808408,80,0.57,76,0.76,0.69,41,True,2,True,92,West,0
+ACC1385,Company_385,Healthcare,1583349,101,0.5,151,0.01,0.82,21,False,9,False,90,East,0
+ACC1386,Company_386,Manufacturing,1809346,119,0.8,89,0.52,0.35,44,True,6,True,44,Central,1
+ACC1387,Company_387,Technology,620263,35,0.19,33,0.55,0.56,23,True,7,True,14,East,0
+ACC1388,Company_388,Construction,4345130,132,0.45,107,0.51,0.19,5,False,4,False,52,Central,0
+ACC1389,Company_389,E-commerce,3951361,64,0.18,159,0.23,0.75,42,False,4,True,90,East,1
+ACC1390,Company_390,Technology,1246134,40,0.99,198,0.46,0.64,22,True,8,False,48,East,1
+ACC1391,Company_391,Retail,4954650,22,0.65,57,0.43,0.74,32,True,7,False,29,South,1
+ACC1392,Company_392,Construction,4735840,33,0.37,17,0.64,0.73,20,True,0,True,80,Central,0
+ACC1393,Company_393,Technology,1655118,148,0.78,119,-0.26,0.95,34,False,9,False,6,West,0
+ACC1394,Company_394,Manufacturing,4624662,84,0.98,12,0.44,0.08,6,False,0,True,108,West,1
+ACC1395,Company_395,E-commerce,2725235,114,0.37,190,0.34,0.38,6,False,10,True,54,West,0
+ACC1396,Company_396,Technology,1869205,54,0.45,169,-0.16,0.74,30,True,6,True,20,West,1
+ACC1397,Company_397,E-commerce,2196825,82,0.55,65,0.55,0.03,44,False,3,True,62,East,0
+ACC1398,Company_398,Healthcare,1147378,30,0.11,80,0.05,0.94,1,True,6,True,39,North,1
+ACC1399,Company_399,Retail,4618220,58,0.51,194,0.04,0.39,7,False,9,True,38,East,1
+ACC1400,Company_400,E-commerce,3659179,106,0.51,40,-0.56,0.73,4,True,9,False,7,North,0
+ACC1401,Company_401,Healthcare,767937,105,0.26,48,-0.46,0.48,35,False,9,False,45,West,0
+ACC1402,Company_402,Construction,624008,106,0.8,99,-0.02,0.73,30,False,1,False,39,East,0
+ACC1403,Company_403,Manufacturing,3629695,164,0.14,145,0.38,0.06,24,True,3,True,39,North,0
+ACC1404,Company_404,Technology,1042674,75,0.1,123,0.27,0.31,41,True,9,False,54,North,1
+ACC1405,Company_405,Technology,1690726,22,0.68,39,-0.05,0.91,40,False,8,True,92,South,0
+ACC1406,Company_406,Healthcare,1993242,172,0.38,66,-0.0,0.28,26,True,5,False,100,South,0
+ACC1407,Company_407,Construction,4232628,55,0.07,90,-0.54,0.15,9,True,0,True,96,South,0
+ACC1408,Company_408,Textile,3651706,140,0.12,197,-0.43,0.16,32,False,7,False,65,Central,0
+ACC1409,Company_409,Manufacturing,2944615,150,0.96,80,0.73,0.53,35,False,5,False,81,Central,0
+ACC1410,Company_410,Construction,1924633,153,0.7,53,0.59,0.71,14,False,6,False,20,West,0
+ACC1411,Company_411,Manufacturing,2140128,91,0.74,80,0.1,0.39,2,False,9,False,56,Central,1
+ACC1412,Company_412,Textile,289851,72,0.86,174,-0.24,0.35,5,False,6,False,45,West,1
+ACC1413,Company_413,Construction,2290365,108,0.43,106,0.77,0.73,21,True,9,False,14,Central,1
+ACC1414,Company_414,Construction,1954779,126,0.34,98,0.19,0.4,5,True,0,True,90,North,1
+ACC1415,Company_415,Manufacturing,1629001,121,0.06,53,0.62,0.15,44,True,0,True,28,Central,0
+ACC1416,Company_416,E-commerce,1267752,109,0.38,121,0.57,0.22,37,False,6,False,71,South,1
+ACC1417,Company_417,Construction,962970,180,0.75,4,0.18,0.53,27,False,0,False,61,South,0
+ACC1418,Company_418,Manufacturing,2119202,134,0.65,5,-0.24,0.87,50,True,5,True,43,South,0
+ACC1419,Company_419,Retail,1742094,167,0.82,175,-0.1,0.49,11,True,5,False,37,West,1
+ACC1420,Company_420,Technology,3581077,125,0.21,86,-0.44,0.55,27,False,2,True,52,North,0
+ACC1421,Company_421,E-commerce,4144023,41,0.18,95,0.65,0.8,47,True,5,True,97,West,0
+ACC1422,Company_422,Construction,1836650,46,0.03,22,0.44,0.97,7,True,7,True,93,North,1
+ACC1423,Company_423,Textile,2656423,85,0.21,200,0.54,0.22,35,False,10,False,19,West,0
+ACC1424,Company_424,Retail,697945,130,0.07,45,-0.48,0.67,46,True,6,False,43,South,1
+ACC1425,Company_425,Technology,1834911,156,0.59,160,-0.56,0.62,37,False,8,True,103,South,0
+ACC1426,Company_426,Textile,2929633,101,0.02,14,0.62,1.0,31,False,9,True,88,South,0
+ACC1427,Company_427,Textile,4196975,52,0.6,70,0.07,0.74,45,False,4,False,17,West,1
+ACC1428,Company_428,Manufacturing,1810783,88,0.02,152,0.06,0.4,5,True,2,True,19,West,0
+ACC1429,Company_429,Manufacturing,4474082,46,0.29,126,0.04,0.01,28,True,6,True,109,East,1
+ACC1430,Company_430,Healthcare,3110835,82,0.87,192,0.55,0.56,38,True,8,False,59,West,0
+ACC1431,Company_431,Textile,648678,35,0.81,59,-0.01,0.29,37,True,4,True,29,West,0
+ACC1432,Company_432,Construction,1494076,63,0.15,84,-0.33,0.01,30,True,0,False,120,West,1
+ACC1433,Company_433,Manufacturing,3407448,123,0.58,198,0.38,0.58,50,True,4,True,102,Central,1
+ACC1434,Company_434,E-commerce,2346660,93,0.03,53,0.48,0.85,3,False,10,False,120,Central,0
+ACC1435,Company_435,Construction,2963695,50,0.57,90,0.17,0.79,42,False,10,False,11,North,0
+ACC1436,Company_436,Construction,3373890,89,0.65,81,-0.28,0.42,7,False,2,False,110,South,1
+ACC1437,Company_437,Manufacturing,274158,34,0.71,78,-0.6,0.98,42,True,6,False,66,East,1
+ACC1438,Company_438,E-commerce,2206481,17,0.31,106,-0.5,0.52,30,True,1,True,59,South,0
+ACC1439,Company_439,E-commerce,1983411,175,0.63,119,0.23,0.61,35,True,5,True,44,East,0
+ACC1440,Company_440,Construction,1284125,44,0.89,79,-0.58,0.56,49,False,1,True,64,South,0
+ACC1441,Company_441,Manufacturing,760387,111,0.12,126,-0.22,0.53,6,False,8,False,54,East,0
+ACC1442,Company_442,E-commerce,860069,31,0.21,18,0.21,0.88,28,True,5,False,17,West,0
+ACC1443,Company_443,Retail,1144666,131,0.06,37,-0.33,0.03,35,False,7,True,47,West,1
+ACC1444,Company_444,Textile,3045537,42,0.13,98,0.6,0.06,15,True,1,True,77,North,0
+ACC1445,Company_445,Technology,9401,169,0.52,27,0.63,0.51,27,True,1,False,52,North,1
+ACC1446,Company_446,Healthcare,3717530,129,0.75,11,0.5,0.1,14,True,5,True,97,Central,1
+ACC1447,Company_447,E-commerce,1934324,99,0.36,28,-0.58,0.55,8,True,6,False,43,North,0
+ACC1448,Company_448,Technology,1800606,122,0.98,175,0.22,0.16,40,True,5,True,36,West,1
+ACC1449,Company_449,Manufacturing,2722823,10,0.61,119,0.34,0.4,44,True,5,False,62,East,1
+ACC1450,Company_450,Technology,838274,25,0.45,125,0.13,0.91,23,True,8,False,61,South,1
+ACC1451,Company_451,Construction,799212,39,0.1,81,0.52,0.42,15,True,2,False,11,Central,0
+ACC1452,Company_452,Manufacturing,1038824,127,0.55,116,-0.55,0.66,16,True,8,True,60,East,0
+ACC1453,Company_453,E-commerce,2215702,62,0.11,111,0.04,0.65,19,True,0,True,48,North,0
+ACC1454,Company_454,E-commerce,3854706,116,0.45,119,0.4,0.26,23,False,9,True,41,East,1
+ACC1455,Company_455,Healthcare,799536,32,0.42,198,-0.44,0.86,48,True,1,False,72,West,1
+ACC1456,Company_456,Textile,415921,150,0.94,21,0.14,0.48,21,False,7,True,92,South,1
+ACC1457,Company_457,Textile,823721,29,0.31,157,-0.19,0.86,24,False,7,True,56,South,0
+ACC1458,Company_458,Healthcare,4756344,162,0.65,138,0.74,0.42,8,False,5,False,47,South,1
+ACC1459,Company_459,Healthcare,1420200,49,0.21,116,-0.22,0.14,7,False,4,True,92,South,0
+ACC1460,Company_460,Construction,4993895,148,0.88,46,0.05,0.01,42,False,8,True,29,West,1
+ACC1461,Company_461,Retail,3363008,74,0.58,186,0.23,0.72,42,False,2,True,30,West,0
+ACC1462,Company_462,Retail,4570925,151,0.57,33,0.62,0.26,36,True,2,True,85,Central,1
+ACC1463,Company_463,Technology,998045,133,0.18,77,-0.5,0.46,5,False,9,False,57,Central,1
+ACC1464,Company_464,Construction,244500,75,0.91,100,-0.27,0.71,11,True,7,False,61,East,1
+ACC1465,Company_465,Textile,1847370,136,0.52,54,0.77,0.92,37,True,3,False,106,West,1
+ACC1466,Company_466,Textile,592683,143,0.96,42,0.25,0.77,37,False,4,True,65,West,0
+ACC1467,Company_467,Technology,792729,145,0.47,63,0.17,0.2,3,False,9,False,3,North,0
+ACC1468,Company_468,Healthcare,2924153,43,0.02,40,0.12,0.98,43,True,4,False,91,Central,0
+ACC1469,Company_469,Healthcare,399804,147,0.43,101,0.59,0.28,30,False,0,False,46,South,0
+ACC1470,Company_470,Retail,2617945,44,0.02,44,-0.06,0.43,18,True,0,True,32,West,0
+ACC1471,Company_471,Textile,97115,11,0.97,49,0.54,0.21,16,True,0,True,66,Central,0
+ACC1472,Company_472,E-commerce,960905,39,0.63,67,0.54,0.05,46,False,7,False,97,East,0
+ACC1473,Company_473,E-commerce,2022647,71,0.25,175,-0.46,0.09,30,False,5,False,39,South,0
+ACC1474,Company_474,Technology,2825570,171,0.24,200,0.05,0.01,22,True,5,False,116,South,1
+ACC1475,Company_475,Healthcare,4834710,161,0.47,33,-0.06,0.49,20,True,1,False,56,Central,0
+ACC1476,Company_476,Technology,803437,39,0.77,134,0.46,0.77,47,False,0,True,47,South,1
+ACC1477,Company_477,Retail,3655445,149,0.22,63,0.74,0.18,29,True,9,False,30,Central,1
+ACC1478,Company_478,E-commerce,4895703,153,0.69,173,0.72,0.03,45,True,0,True,54,Central,1
+ACC1479,Company_479,Manufacturing,3154476,53,0.9,146,0.57,0.16,35,True,8,False,4,North,1
+ACC1480,Company_480,Construction,2374497,19,0.62,145,-0.26,0.67,50,False,8,False,112,West,1
+ACC1481,Company_481,Construction,272228,107,0.72,146,-0.26,0.74,39,True,7,False,101,Central,1
+ACC1482,Company_482,E-commerce,2284817,171,0.17,170,-0.59,0.31,25,False,9,True,48,Central,1
+ACC1483,Company_483,Construction,2517663,62,0.57,93,0.59,0.09,28,True,3,True,26,North,0
+ACC1484,Company_484,Textile,1814958,68,0.24,137,0.79,0.33,2,True,4,True,48,North,0
+ACC1485,Company_485,Manufacturing,4844846,84,0.45,168,-0.09,0.08,27,True,2,True,26,Central,1
+ACC1486,Company_486,Textile,834115,94,0.6,69,0.22,0.77,15,False,5,False,15,East,0
+ACC1487,Company_487,Construction,53029,70,0.89,196,0.6,0.99,8,False,3,True,110,North,1
+ACC1488,Company_488,E-commerce,4547199,30,0.58,96,0.5,0.2,43,False,4,True,58,Central,0
+ACC1489,Company_489,Manufacturing,3386358,68,0.87,43,0.66,1.0,22,True,3,False,30,South,0
+ACC1490,Company_490,E-commerce,3129399,34,0.24,91,-0.44,0.92,40,False,9,True,6,Central,1
+ACC1491,Company_491,Construction,1690693,170,0.12,49,-0.44,0.76,33,True,0,True,119,South,1
+ACC1492,Company_492,Manufacturing,2910530,94,0.19,36,-0.42,0.15,9,False,10,False,77,South,0
+ACC1493,Company_493,Healthcare,3762582,101,0.77,66,-0.06,0.25,14,False,0,False,53,South,1
+ACC1494,Company_494,Healthcare,2932428,90,0.09,151,-0.59,0.6,49,True,8,True,120,South,0
+ACC1495,Company_495,Construction,4434925,170,0.27,188,-0.07,0.25,21,True,2,False,23,East,0
+ACC1496,Company_496,E-commerce,1126675,96,0.17,134,0.6,0.45,16,True,7,True,30,Central,1
+ACC1497,Company_497,Textile,81582,118,0.88,165,0.69,0.24,27,False,7,False,3,North,1
+ACC1498,Company_498,E-commerce,1809520,111,0.06,147,-0.15,0.42,30,False,4,True,44,North,1
+ACC1499,Company_499,Technology,2026960,144,0.36,171,0.37,0.16,36,True,4,False,27,Central,0
