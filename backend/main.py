@@ -1,64 +1,103 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
-import xgboost as xgb
+from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 import pandas as pd
-import numpy as np
+import io
+import json
+from typing import List, Dict
+import sys
+import os
 
-# 1. Initialize the App
-app = Flask(__name__)
-CORS(app)  # This allows your frontend (website) to talk to this backend
-
-# 2. Load the AI Brain
-print("🤖 Loading RECOV.AI Model...")
-model = xgb.XGBClassifier()
+# Robust import logic for sibling modules
 try:
-    model.load_model('recov_ai_model.json')
-    print("✅ Model loaded successfully!")
+    from backend.predictor import RecoveryPredictor
+    from backend.models import AccountData, PredictionResponse
+except ImportError:
+    # If running from inside backend/ folder
+    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+    from predictor import RecoveryPredictor
+    from models import AccountData, PredictionResponse
+
+app = FastAPI(title="RECOV.AI API", version="1.0.0")
+
+# --- 1. CORS SETUP ---
+# Allows React (localhost:5173) to talk to this Python backend
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:5173", "http://localhost:3000"], 
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+# --- 2. GLOBAL STATE ---
+# In-memory database to store the last analysis results
+stored_predictions: Dict[str, dict] = {}
+
+# Initialize the Brain
+try:
+    predictor = RecoveryPredictor()
+    print("✅ RECOV.AI Brain Initialized")
 except Exception as e:
-    print(f"❌ Error loading model: {e}")
+    print(f"❌ Failed to initialize predictor: {e}")
+    predictor = None
 
-# 3. Define the Prediction Route
-@app.route('/predict', methods=['POST'])
-def predict():
+# --- 3. ENDPOINTS ---
+
+@app.get("/")
+def home():
+    return {"message": "RECOV.AI API is Running", "status": "active"}
+
+@app.post("/analyze", response_model=List[PredictionResponse])
+async def analyze_file(file: UploadFile = File(...)):
+    """
+    Receives a CSV file, parses it, runs ML predictions, 
+    and returns the results.
+    """
+    if not predictor:
+        raise HTTPException(status_code=500, detail="ML Model not active")
+    
+    # 1. Read the uploaded file
     try:
-        # Get data from the website
-        data = request.json
-        print(f"📥 Received data: {data}")
-
-        # Create a DataFrame (must match the training columns exactly)
-        # Note: We only need the features the AI was trained on
-        input_data = pd.DataFrame([{
-            'amount': float(data.get('amount', 0)),
-            'days_overdue': int(data.get('days_overdue', 0)),
-            'payment_history_score': float(data.get('payment_history_score', 0.5)),
-            'shipment_volume_change_30d': float(data.get('shipment_volume_change_30d', 0.0)),
-            'email_opened': int(data.get('email_opened', 0)),
-            'dispute_flag': int(data.get('dispute_flag', 0)),
-            
-            # These columns weren't used in the final math model, but we add them to prevent errors
-            # if the model expects them (depending on how we finalized the training columns).
-            # For XGBoost, column order matters!
-        }])
-
-        # Make the Prediction
-        prediction = model.predict(input_data)[0]
-        probability = model.predict_proba(input_data)[0][1]
-
-        # Return the result
-        result = {
-            'prediction': int(prediction), # 1 = Will Pay, 0 = Risk
-            'risk_score': float(1 - probability), # Higher score = Higher risk
-            'message': "High Likelihood of Payment" if prediction == 1 else "High Risk of Default"
-        }
-        
-        print(f"📤 Sending result: {result}")
-        return jsonify(result)
-
+        contents = await file.read()
+        df = pd.read_csv(io.BytesIO(contents))
     except Exception as e:
-        print(f"❌ API Error: {e}")
-        return jsonify({'error': str(e)}), 500
+        raise HTTPException(status_code=400, detail=f"Invalid CSV file: {str(e)}")
+    
+    # 2. Validate essential columns exist
+    required_cols = ['account_id', 'amount', 'days_overdue']
+    missing = [c for c in required_cols if c not in df.columns]
+    if missing:
+        raise HTTPException(status_code=400, detail=f"Missing columns: {missing}")
+    
+    # 3. Generate Predictions
+    results = []
+    stored_predictions.clear() # Clear old cache
+    
+    print(f"Processing {len(df)} accounts...")
+    
+    for _, row in df.iterrows():
+        # Convert row to dict
+        account_data = row.to_dict()
+        
+        # Run Prediction
+        prediction = predictor.predict_recovery(account_data)
+        
+        # Add to results list
+        results.append(prediction)
+        
+        # Store in memory for Detail View
+        acc_id = str(account_data.get('account_id', 'unknown'))
+        stored_predictions[acc_id] = prediction
+        
+    print(f"✅ Analyzed {len(results)} accounts successfully")
+    return results
 
-# 4. Start the Server
-if __name__ == '__main__':
-    print("🚀 RECOV.AI Server starting on port 5000...")
-    app.run(debug=True, port=5000)
+@app.get("/account/{account_id}", response_model=PredictionResponse)
+def get_account_detail(account_id: str):
+    """
+    Fetch the detailed prediction for a specific account.
+    """
+    if account_id not in stored_predictions:
+        raise HTTPException(status_code=404, detail="Account not found. Upload a file first.")
+    
+    return stored_predictions[account_id]
