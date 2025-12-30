@@ -1,103 +1,65 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException
+from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
-import pandas as pd
-import io
-import json
-from typing import List, Dict
-import sys
-import os
+from pydantic import BaseModel
+from typing import Optional
+import uvicorn
 
-# Robust import logic for sibling modules
-try:
-    from backend.predictor import RecoveryPredictor
-    from backend.models import AccountData, PredictionResponse
-except ImportError:
-    # If running from inside backend/ folder
-    sys.path.append(os.path.dirname(os.path.abspath(__file__)))
-    from predictor import RecoveryPredictor
-    from models import AccountData, PredictionResponse
+# Relative import
+from .predictor import RecoveryPredictor
 
-app = FastAPI(title="RECOV.AI API", version="1.0.0")
+app = FastAPI()
 
-# --- 1. CORS SETUP ---
-# Allows React (localhost:5173) to talk to this Python backend
+# --- 1. ALLOW ALL CONNECTIONS (CORS) ---
+# This fixes the "Blocked" errors
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"], 
+    allow_origins=["*"],  # Allows all origins
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["*"],  # Allows all methods (POST, GET, etc.)
+    allow_headers=["*"],  # Allows all headers
 )
 
-# --- 2. GLOBAL STATE ---
-# In-memory database to store the last analysis results
-stored_predictions: Dict[str, dict] = {}
-
-# Initialize the Brain
+# Initialize AI
 try:
     predictor = RecoveryPredictor()
-    print("✅ RECOV.AI Brain Initialized")
+    print("✅ AI Engine Loaded")
 except Exception as e:
-    print(f"❌ Failed to initialize predictor: {e}")
+    print(f"❌ AI Engine Failed: {e}")
     predictor = None
 
-# --- 3. ENDPOINTS ---
+# --- 2. DEFINE DATA STRUCTURE ---
+# The frontend MUST send data matching this exactly
+class AccountRequest(BaseModel):
+    account_id: str
+    company_name: str
+    amount: float
+    days_overdue: int
+    payment_history_score: float
+    shipment_volume_30d: int
+    shipment_volume_change_30d: float
+    industry: str
+    region: str
+    # Optional fields
+    express_ratio: Optional[float] = 0.0
+    destination_diversity: Optional[int] = 0
+    email_opened: Optional[bool] = False
+    dispute_flag: Optional[bool] = False
 
 @app.get("/")
 def home():
-    return {"message": "RECOV.AI API is Running", "status": "active"}
+    return {"status": "Backend is Running", "url": "http://127.0.0.1:8000"}
 
-@app.post("/analyze", response_model=List[PredictionResponse])
-async def analyze_file(file: UploadFile = File(...)):
-    """
-    Receives a CSV file, parses it, runs ML predictions, 
-    and returns the results.
-    """
+@app.post("/predict")
+def predict_recovery(data: AccountRequest):
+    print(f"📩 Received Request for: {data.company_name}")
+    
     if not predictor:
-        raise HTTPException(status_code=500, detail="ML Model not active")
-    
-    # 1. Read the uploaded file
-    try:
-        contents = await file.read()
-        df = pd.read_csv(io.BytesIO(contents))
-    except Exception as e:
-        raise HTTPException(status_code=400, detail=f"Invalid CSV file: {str(e)}")
-    
-    # 2. Validate essential columns exist
-    required_cols = ['account_id', 'amount', 'days_overdue']
-    missing = [c for c in required_cols if c not in df.columns]
-    if missing:
-        raise HTTPException(status_code=400, detail=f"Missing columns: {missing}")
-    
-    # 3. Generate Predictions
-    results = []
-    stored_predictions.clear() # Clear old cache
-    
-    print(f"Processing {len(df)} accounts...")
-    
-    for _, row in df.iterrows():
-        # Convert row to dict
-        account_data = row.to_dict()
+        return {"error": "AI Model not loaded"}
         
-        # Run Prediction
-        prediction = predictor.predict_recovery(account_data)
-        
-        # Add to results list
-        results.append(prediction)
-        
-        # Store in memory for Detail View
-        acc_id = str(account_data.get('account_id', 'unknown'))
-        stored_predictions[acc_id] = prediction
-        
-    print(f"✅ Analyzed {len(results)} accounts successfully")
-    return results
+    account_data = data.dict()
+    result = predictor.predict_recovery(account_data)
+    return result
 
-@app.get("/account/{account_id}", response_model=PredictionResponse)
-def get_account_detail(account_id: str):
-    """
-    Fetch the detailed prediction for a specific account.
-    """
-    if account_id not in stored_predictions:
-        raise HTTPException(status_code=404, detail="Account not found. Upload a file first.")
-    
-    return stored_predictions[account_id]
+if __name__ == "__main__":
+    # Force it to run on 127.0.0.1 port 8000
+    uvicorn.run(app, host="127.0.0.1", port=8000)

@@ -7,24 +7,9 @@ from pathlib import Path
 import sys
 import os
 
-# --- 1. ROBUST IMPORT LOGIC ---
-# Add parent directory to path to ensure we can find sibling files
-current_dir = os.path.dirname(os.path.abspath(__file__))
-parent_dir = os.path.dirname(current_dir)
-if parent_dir not in sys.path:
-    sys.path.append(parent_dir)
-
-# Try importing the SHAP engine
-try:
-    # Attempt 1: Absolute import (works when running from root)
-    from backend.shap_explainer import ExplainabilityEngine
-except ImportError:
-    try:
-        # Attempt 2: Relative import (works when running from inside backend folder)
-        from shap_explainer import ExplainabilityEngine
-    except ImportError:
-        print("⚠️ Warning: Could not import SHAP explainer. Explanations will be disabled.")
-        ExplainabilityEngine = None
+# --- 1. CLEAN IMPORT (Permanent Fix) ---
+# Uses relative import because this file is part of the 'backend' package
+from .shap_explainer import ExplainabilityEngine
 
 # --- 2. PREDICTOR CLASS ---
 class RecoveryPredictor:
@@ -34,16 +19,16 @@ class RecoveryPredictor:
     """
     
     def __init__(self, model_path: str = 'backend/models/recovery_model.pkl'):
-        """Load all trained models"""
+        """Load all trained models with robust path finding"""
         self.model_path = Path(model_path)
         
-        # Robust path finding
+        # Robust path finding to handle running from different directories
         if not self.model_path.exists():
-            # Try specific alternative paths common in this project structure
+            current_dir = os.path.dirname(os.path.abspath(__file__))
             alt_paths = [
-                Path("models/recovery_model.pkl"),                     # Inside backend/
-                Path("../backend/models/recovery_model.pkl"),          # From root/ml
-                Path(os.path.join(current_dir, "models/recovery_model.pkl")) # Absolute
+                Path("models/recovery_model.pkl"),                     # If running from backend/
+                Path("../backend/models/recovery_model.pkl"),          # If running from sibling
+                Path(os.path.join(current_dir, "models/recovery_model.pkl")) # Absolute path relative to this file
             ]
             for p in alt_paths:
                 if p.exists():
@@ -53,14 +38,17 @@ class RecoveryPredictor:
         self.models = None
         self.feature_names = None
         self.explainer = None
+        
+        # Load the models immediately
         self.load_models()
 
         # Initialize Explainer (if available)
-        if ExplainabilityEngine:
-            try:
-                self.explainer = ExplainabilityEngine(str(self.model_path))
-            except Exception as e:
-                print(f"⚠️ Explainer init failed: {e}")
+        try:
+            self.explainer = ExplainabilityEngine(str(self.model_path))
+            print("✅ SHAP Explainer attached successfully")
+        except Exception as e:
+            print(f"⚠️ Explainer init failed: {e}")
+            self.explainer = None
 
     def load_models(self):
         """Load pickled models and metadata"""
