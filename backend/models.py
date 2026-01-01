@@ -1,47 +1,42 @@
 from pydantic import BaseModel
-from typing import List, Optional, Union
+from typing import List, Optional
 
-# --- 1. INPUT MODEL ---
+# 1. INPUT MODEL (Matches your CSV columns)
 class AccountData(BaseModel):
     account_id: str
-    company_name: str = "Unknown"
+    company_name: str
     amount: float
     days_overdue: int
     payment_history_score: float
-    shipment_volume_30d: float
     shipment_volume_change_30d: float
-    express_ratio: float
-    destination_diversity: int
-    industry: str = "Other"
-    region: str = "Other"
-    email_opened: bool = False
-    dispute_flag: bool = False
-    
-    class Config:
-        extra = "ignore" 
+    # Optional fields (Good to have, but not strictly required for prediction if model doesn't use them)
+    industry: Optional[str] = None
+    region: Optional[str] = None
+    shipment_volume_30d: Optional[float] = 0.0
+    express_ratio: Optional[float] = 0.0
+    destination_diversity: Optional[int] = 0
+    contact_attempts: Optional[int] = 0
+    customer_tenure_months: Optional[int] = 0
+    email_opened: Optional[int] = 0
+    dispute_flag: Optional[int] = 0
 
-# --- 2. OUTPUT MODELS ---
-
-class DCARecommendation(BaseModel):
-    name: str
-    specialization: str
-    # FIX 1: Add a default value so it doesn't crash if predictor omits it
-    reasoning: str = "Recommended based on account profile"
-
+# 2. OUTPUT MODELS
 class TopFactor(BaseModel):
     feature: str
-    # FIX 2: Accept float (numbers) because that is what SHAP returns
-    impact: float     
-    direction: str
+    impact: str  # "Increases Risk" or "Increases Recovery"
+    value: float
+
+class DCARecommendation(BaseModel):
+    agency_name: str
+    strategy: str
+    estimated_commission: str
 
 class PredictionResponse(BaseModel):
     account_id: str
-    company_name: str
+    risk_score: float
     recovery_probability: float
-    recovery_percentage: float
-    expected_days: int
-    recovery_velocity_score: float
-    risk_level: str
-    recommended_dca: DCARecommendation
+    risk_level: str  # "Low", "Medium", "High"
+    expected_recovery_amount: float
+    days_to_pay_prediction: int
     top_factors: List[TopFactor]
-    prediction_timestamp: str
+    dca_recommendation: DCARecommendation

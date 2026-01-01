@@ -1,363 +1,137 @@
-#!/usr/bin/env python3
-"""
-RECOV.AI - XGBoost Model Training Script
-==========================================
-This script trains a multi-output prediction model for debt recovery:
-1. Recovery Probability (Classification: 0-1)
-2. Days to Recovery (Regression: 10-60 days)
-3. Recovery Percentage (Regression: 0.7-1.0)
-"""
-
-# =============================================================================
-# 1. IMPORTS
-# =============================================================================
 import pandas as pd
 import numpy as np
-from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.preprocessing import LabelEncoder, StandardScaler
-from sklearn.metrics import (
-    accuracy_score, 
-    roc_auc_score, 
-    classification_report,
-    precision_recall_fscore_support,
-    confusion_matrix,
-    mean_absolute_error, 
-    mean_squared_error,
-    r2_score
-)
-from xgboost import XGBClassifier, XGBRegressor
 import pickle
 import json
-from datetime import datetime
-from pathlib import Path
-import warnings
-import sys
 import os
+from pathlib import Path
+from xgboost import XGBClassifier, XGBRegressor
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, roc_auc_score
 
-warnings.filterwarnings('ignore')
+# --- CONFIG ---
+# Automatically find the project root based on where this file is
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
+DATA_PATH = BASE_DIR / "backend" / "data" / "training_data.csv"
+MODEL_PATH = BASE_DIR / "backend" / "models" / "recovery_model.pkl"
+METADATA_PATH = BASE_DIR / "backend" / "models" / "model_metadata.json"
 
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
-class Config:
-    """Configuration settings for model training."""
+def load_and_prep_data():
+    print(f"✅ Loading data from: {DATA_PATH}")
+    if not DATA_PATH.exists():
+        raise FileNotFoundError(f"❌ Data file not found at {DATA_PATH}")
+        
+    df = pd.read_csv(DATA_PATH)
     
-    # Paths
-    DATA_PATH = Path("backend/data/training_data.csv")
-    MODEL_OUTPUT_PATH = Path("backend/models/recovery_model.pkl")
-    METADATA_OUTPUT_PATH = Path("backend/models/model_metadata.json")
-    
-    # Model parameters
-    RANDOM_STATE = 42
-    TEST_SIZE = 0.30
-    
-    # XGBoost Classifier parameters
-    CLASSIFIER_PARAMS = {
-        'n_estimators': 100,
-        'max_depth': 5,
-        'learning_rate': 0.1,
-        'subsample': 0.8,
-        'colsample_bytree': 0.8,
-        'random_state': 42,
-        'eval_metric': 'logloss',
-        'use_label_encoder': False
-    }
-    
-    # XGBoost Regressor parameters (Days)
-    REGRESSOR_DAYS_PARAMS = {
-        'n_estimators': 100,
-        'max_depth': 4,
-        'learning_rate': 0.1,
-        'subsample': 0.8,
-        'colsample_bytree': 0.8,
-        'random_state': 42
-    }
-    
-    # XGBoost Regressor parameters (Percentage)
-    REGRESSOR_PCT_PARAMS = {
-        'n_estimators': 80,
-        'max_depth': 4,
-        'learning_rate': 0.1,
-        'subsample': 0.8,
-        'colsample_bytree': 0.8,
-        'random_state': 42
-    }
-    
-    # Features
-    SHIPPING_FEATURES = [
-        'shipment_volume_30d',
-        'shipment_volume_change_30d',
-        'express_ratio',
-        'destination_diversity'
-    ]
-    
-    NUMERICAL_FEATURES = [
-        'amount',
-        'days_overdue',
-        'payment_history_score'
-    ]
-    
-    CATEGORICAL_FEATURES = [
-        'industry',
-        'region'
-    ]
-    
-    BOOLEAN_FEATURES = [
-        'email_opened',
-        'dispute_flag'
-    ]
+    # --- 1. AUTO-FIX: Generate 'outcome' if missing ---
+    if 'outcome' not in df.columns:
+        print("⚠️ 'outcome' column missing. Generating synthetic labels based on logic...")
+        # Rule: If payment history is good (>0.6) AND not too overdue (<70 days), they likely pay (1)
+        df['outcome'] = np.where(
+            (df['payment_history_score'] > 0.60) & (df['days_overdue'] < 70), 
+            1, 
+            0
+        )
+        print("✅ Synthetic 'outcome' labels generated.")
 
-# =============================================================================
-# 2. FEATURE ENGINEERING FUNCTION
-# =============================================================================
-def engineer_features(df: pd.DataFrame, fit_encoders: bool = True, encoders: dict = None) -> tuple:
-    """
-    Transform raw dataframe into feature matrix for model training.
-    """
-    print("\n" + "="*60)
-    print("FEATURE ENGINEERING")
-    print("="*60)
+    # --- 2. AUTO-FIX: Generate Regression Targets ---
+    print("🔄 Generating synthetic regression targets...")
+    np.random.seed(42)
     
-    df_processed = df.copy()
-    
-    if encoders is None:
-        encoders = {}
-    
-    # 2.1 Log Transform Amount
-    df_processed['amount_log'] = np.log1p(df_processed['amount'])
-    print("✓ Created: amount_log (log transform)")
-    
-    # 2.2 Days Overdue Categories
-    bins_days = [0, 30, 60, 90, float('inf')]
-    labels_days = ['0-30', '30-60', '60-90', '90+']
-    df_processed['days_overdue_category'] = pd.cut(
-        df_processed['days_overdue'], 
-        bins=bins_days, 
-        labels=labels_days,
-        include_lowest=True
-    )
-    print("✓ Created: days_overdue_category (bins: 0-30, 30-60, 60-90, 90+)")
-    
-    # 2.3 Payment History Categories
-    bins_payment = [0, 0.4, 0.6, 0.8, 1.0]
-    labels_payment = ['poor', 'fair', 'good', 'excellent']
-    df_processed['payment_history_category'] = pd.cut(
-        df_processed['payment_history_score'],
-        bins=bins_payment,
-        labels=labels_payment,
-        include_lowest=True
-    )
-    print("✓ Created: payment_history_category (poor, fair, good, excellent)")
-    
-    # 2.4 Keep Shipping Features As-Is
-    for feature in Config.SHIPPING_FEATURES:
-        if feature in df_processed.columns:
-            print(f"✓ Kept: {feature} (shipping feature)")
-    
-    # 2.5 One-Hot Encode Categorical Features
-    categorical_to_encode = Config.CATEGORICAL_FEATURES + ['days_overdue_category', 'payment_history_category']
-    
-    for col in categorical_to_encode:
-        if col in df_processed.columns:
-            if fit_encoders:
-                dummies = pd.get_dummies(df_processed[col], prefix=col, drop_first=False)
-                encoders[f'{col}_columns'] = dummies.columns.tolist()
-            else:
-                dummies = pd.get_dummies(df_processed[col], prefix=col, drop_first=False)
-                for expected_col in encoders.get(f'{col}_columns', []):
-                    if expected_col not in dummies.columns:
-                        dummies[expected_col] = 0
-                dummies = dummies[[c for c in encoders.get(f'{col}_columns', []) if c in dummies.columns]]
-            
-            df_processed = pd.concat([df_processed, dummies], axis=1)
-            print(f"✓ One-hot encoded: {col} → {len(dummies.columns)} columns")
-    
-    # 2.6 Boolean to Integer
-    for col in Config.BOOLEAN_FEATURES:
-        if col in df_processed.columns:
-            df_processed[col] = df_processed[col].astype(int)
-            print(f"✓ Converted: {col} (bool → int)")
-    
-    # 2.7 Build Final Feature Matrix
-    feature_columns = []
-    feature_columns.extend(['amount_log', 'days_overdue', 'payment_history_score'])
-    feature_columns.extend([f for f in Config.SHIPPING_FEATURES if f in df_processed.columns])
-    feature_columns.extend([f for f in Config.BOOLEAN_FEATURES if f in df_processed.columns])
-    
-    for col in categorical_to_encode:
-        encoded_cols = [c for c in df_processed.columns if c.startswith(f'{col}_')]
-        feature_columns.extend(encoded_cols)
-    
-    feature_columns = list(dict.fromkeys(feature_columns))
-    feature_columns = [c for c in feature_columns if c in df_processed.columns]
-    
-    X = df_processed[feature_columns].values
-    print(f"\n📊 Final feature matrix shape: {X.shape}")
-    
-    return X, feature_columns, encoders
-
-def generate_synthetic_targets(df: pd.DataFrame) -> pd.DataFrame:
-    """
-    Generate synthetic regression targets based on outcome.
-    """
-    print("\n" + "="*60)
-    print("GENERATING SYNTHETIC REGRESSION TARGETS")
-    print("="*60)
-    
-    np.random.seed(Config.RANDOM_STATE)
-    df_copy = df.copy()
-    
-    # Days to recover
-    df_copy['days_to_recover'] = np.where(
-        df_copy['outcome'] == 1,
-        np.random.randint(15, 46, size=len(df_copy)),  # 15-45 days for paid
-        np.random.randint(60, 121, size=len(df_copy))   # 60-120 days for not paid
+    # Recovery Percentage: High for outcome 1, Low for outcome 0
+    df['recovery_percentage'] = np.where(
+        df['outcome'] == 1,
+        np.random.uniform(0.7, 1.0, size=len(df)),
+        np.random.uniform(0.0, 0.4, size=len(df))
     )
     
-    # Recovery percentage
-    df_copy['recovery_percentage'] = np.where(
-        df_copy['outcome'] == 1,
-        np.random.uniform(0.85, 1.0, size=len(df_copy)),
-        np.random.uniform(0.0, 0.5, size=len(df_copy))
+    # Days to Pay: Low for outcome 1, High for outcome 0
+    random_lag = np.random.randint(5, 30, size=len(df))
+    df['days_to_pay'] = np.where(
+        df['outcome'] == 1,
+        df['days_overdue'] + random_lag,
+        180 # Cap for non-payment
     )
     
-    print(f"✓ Created: days_to_recover and recovery_percentage")
-    return df_copy
+    # --- 3. Feature Engineering ---
+    if 'amount' in df.columns:
+        df['amount_log'] = np.log1p(df['amount'])
+    
+    df.fillna(0, inplace=True)
+    return df
 
-# =============================================================================
-# 3. MODEL TRAINING
-# =============================================================================
-def train_models(X_train, X_test, y_train_class, y_test_class, 
-                 y_train_days, y_test_days, y_train_pct, y_test_pct):
-    """
-    Train all three models: classifier and two regressors.
-    """
-    print("\n" + "="*60)
-    print("MODEL TRAINING")
-    print("="*60)
+def train():
+    df = load_and_prep_data()
     
-    models = {}
-    metrics = {}
+    # Define Features (Updated to match your new Day 1 Schema)
+    features = [
+        'amount_log', 'days_overdue', 'payment_history_score', 
+        'shipment_volume_change_30d', 'shipment_volume_30d', 
+        'express_ratio', 'destination_diversity', 
+        'contact_attempts', 'customer_tenure_months'
+    ]
     
-    # 3.1 PRIMARY MODEL: Recovery Probability
-    print("\n📊 Training PRIMARY MODEL: Recovery Probability Classifier...")
-    classifier = XGBClassifier(**Config.CLASSIFIER_PARAMS)
-    classifier.fit(X_train, y_train_class)
+    # Verify columns exist
+    available_features = [f for f in features if f in df.columns]
+    print(f"features used: {available_features}")
     
-    y_pred_class = classifier.predict(X_test)
-    y_pred_proba = classifier.predict_proba(X_test)[:, 1]
+    X = df[available_features]
+    y_class = df['outcome']
+    y_days = df['days_to_pay']
+    y_pct = df['recovery_percentage']
     
-    accuracy = accuracy_score(y_test_class, y_pred_class)
-    roc_auc = roc_auc_score(y_test_class, y_pred_proba)
-    precision, recall, f1, _ = precision_recall_fscore_support(y_test_class, y_pred_class, average='binary')
+    # Train/Test Split
+    X_train, X_test, y_train, y_test = train_test_split(X, y_class, test_size=0.2, random_state=42)
+    _, _, y_days_train, y_days_test = train_test_split(X, y_days, test_size=0.2, random_state=42)
+    _, _, y_pct_train, y_pct_test = train_test_split(X, y_pct, test_size=0.2, random_state=42)
     
-    print(f"✓ Accuracy:  {accuracy:.4f}")
+    # --- 1. Train Classifier (Risk Level) ---
+    print("\n🤖 Training XGBoost Classifier...")
+    clf = XGBClassifier(n_estimators=100, learning_rate=0.1, max_depth=5, use_label_encoder=False, eval_metric='logloss')
+    clf.fit(X_train, y_train)
     
-    models['classifier'] = classifier
-    metrics['classifier'] = {'accuracy': float(accuracy), 'roc_auc': float(roc_auc), 'f1_score': float(f1)}
+    y_pred = clf.predict(X_test)
+    acc = accuracy_score(y_test, y_pred)
+    roc = roc_auc_score(y_test, y_pred)
     
-    # 3.2 SECONDARY MODEL: Days to Recovery
-    print("\n📊 Training SECONDARY MODEL: Days to Recovery Regressor...")
-    regressor_days = XGBRegressor(**Config.REGRESSOR_DAYS_PARAMS)
-    regressor_days.fit(X_train, y_train_days)
-    y_pred_days = regressor_days.predict(X_test)
-    mae_days = mean_absolute_error(y_test_days, y_pred_days)
-    
-    print(f"✓ MAE:  {mae_days:.2f} days")
-    models['regressor_days'] = regressor_days
-    metrics['regressor_days'] = {'mae': float(mae_days)}
-    
-    # 3.3 TERTIARY MODEL: Recovery Percentage
-    print("\n📊 Training TERTIARY MODEL: Recovery Percentage Regressor...")
-    regressor_pct = XGBRegressor(**Config.REGRESSOR_PCT_PARAMS)
-    regressor_pct.fit(X_train, y_train_pct)
-    y_pred_pct = regressor_pct.predict(X_test)
-    mae_pct = mean_absolute_error(y_test_pct, y_pred_pct)
-    
-    print(f"✓ MAE:  {mae_pct:.4f} ({mae_pct*100:.2f}%)")
-    models['regressor_pct'] = regressor_pct
-    metrics['regressor_pct'] = {'mae': float(mae_pct)}
-    
-    return models, metrics
+    print(f"   🏆 Classifier Accuracy: {acc:.4f}")
+    print(f"   🏆 ROC-AUC Score: {roc:.4f}")
 
-# =============================================================================
-# 4. SAVE & ANALYZE
-# =============================================================================
-def save_model(models, feature_names, encoders, metrics):
-    print("\n" + "="*60)
-    print("SAVING MODEL")
-    print("="*60)
+    # --- 2. Train Regressors (Days & %) ---
+    print("\n🤖 Training XGBoost Regressors...")
+    reg_days = XGBRegressor(n_estimators=100, max_depth=5)
+    reg_days.fit(X_train, y_days_train)
     
-    Config.MODEL_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
+    reg_pct = XGBRegressor(n_estimators=100, max_depth=5)
+    reg_pct.fit(X_train, y_pct_train)
     
-    model_package = {
-        'models': models,
-        'feature_names': feature_names,
-        'encoders': encoders,
-        'version': '1.0.0',
-        'trained_at': datetime.now().isoformat()
+    print("   ✅ Regressors Trained")
+
+    # --- 3. Save Everything ---
+    model_pkg = {
+        'models': {
+            'classifier': clf,
+            'regressor_days': reg_days,
+            'regressor_pct': reg_pct
+        },
+        'feature_names': available_features
     }
     
-    with open(Config.MODEL_OUTPUT_PATH, 'wb') as f:
-        pickle.dump(model_package, f)
+    # Create directory if it doesn't exist
+    os.makedirs(MODEL_PATH.parent, exist_ok=True)
     
-    print(f"✅ Model saved to: {Config.MODEL_OUTPUT_PATH}")
+    with open(MODEL_PATH, 'wb') as f:
+        pickle.dump(model_pkg, f)
+        
+    print(f"\n💾 Model saved to {MODEL_PATH}")
     
     # Save Metadata
-    metadata = {
-        'training_date': datetime.now().isoformat(),
-        'performance': metrics
+    meta = {
+        'accuracy': float(acc),
+        'roc_auc': float(roc),
+        'features': available_features
     }
-    with open(Config.METADATA_OUTPUT_PATH, 'w') as f:
-        json.dump(metadata, f, indent=2)
-    print(f"✅ Metadata saved to: {Config.METADATA_OUTPUT_PATH}")
-
-def main():
-    print("="*70)
-    print("       RECOV.AI - MODEL TRAINING PIPELINE")
-    print("="*70)
-    
-    # Load Data
-    if not Config.DATA_PATH.exists():
-        # Fallback paths
-        possible_paths = [Path("../../backend/data/training_data.csv"), Path("../backend/data/training_data.csv")]
-        for p in possible_paths:
-            if p.exists():
-                Config.DATA_PATH = p
-                break
-    
-    try:
-        df = pd.read_csv(Config.DATA_PATH)
-        print(f"✅ Loaded data from: {Config.DATA_PATH}")
-    except:
-        print(f"❌ ERROR: Could not find training_data.csv")
-        return
-
-    # Generate Targets
-    df = generate_synthetic_targets(df)
-    
-    # Feature Engineering
-    X, feature_names, encoders = engineer_features(df, fit_encoders=True)
-    
-    y_class = df['outcome'].values
-    y_days = df['days_to_recover'].values
-    y_pct = df['recovery_percentage'].values
-    
-    # Split
-    X_train, X_test, y_train_class, y_test_class = train_test_split(X, y_class, test_size=Config.TEST_SIZE, stratify=y_class, random_state=Config.RANDOM_STATE)
-    
-    # Indices for regression (aligning with split)
-    # Note: Simplification for script - using same split
-    _, _, y_train_days, y_test_days = train_test_split(X, y_days, test_size=Config.TEST_SIZE, stratify=y_class, random_state=Config.RANDOM_STATE)
-    _, _, y_train_pct, y_test_pct = train_test_split(X, y_pct, test_size=Config.TEST_SIZE, stratify=y_class, random_state=Config.RANDOM_STATE)
-    
-    # Train
-    models, metrics = train_models(X_train, X_test, y_train_class, y_test_class, y_train_days, y_test_days, y_train_pct, y_test_pct)
-    
-    # Save
-    save_model(models, feature_names, encoders, metrics)
-    
-    print("\n✅ TARGET ACHIEVED: Pipeline Complete!")
+    with open(METADATA_PATH, 'w') as f:
+        json.dump(meta, f, indent=2)
 
 if __name__ == "__main__":
-    main()
+    train()

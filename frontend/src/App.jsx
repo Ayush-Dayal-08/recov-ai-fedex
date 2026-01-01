@@ -120,7 +120,7 @@ function App() {
               <div style={{display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '10px', marginBottom: '20px'}}>
                 <div style={cardStyle}>
                   <small>Expected Recovery</small>
-                  <div style={{fontWeight:'bold', fontSize:'18px'}}>{result.recovery_percentage.toFixed(0)}%</div>
+                  <div style={{fontWeight:'bold', fontSize:'18px'}}>{(result.recovery_percentage * 100).toFixed(0)}%</div>
                 </div>
                 <div style={cardStyle}>
                   <small>Est. Days to Pay</small>

@@ -1,16 +1,15 @@
 {
-  "training_date": "2025-12-30T00:28:44.130720",
-  "performance": {
-    "classifier": {
-      "accuracy": 0.9933333333333333,
-      "roc_auc": 1.0,
-      "f1_score": 0.9919354838709677
-    },
-    "regressor_days": {
-      "mae": 12.635879700978597
-    },
-    "regressor_pct": {
-      "mae": 0.0907929188271996
-    }
-  }
+  "accuracy": 1.0,
+  "roc_auc": 1.0,
+  "features": [
+    "amount_log",
+    "days_overdue",
+    "payment_history_score",
+    "shipment_volume_change_30d",
+    "shipment_volume_30d",
+    "express_ratio",
+    "destination_diversity",
+    "contact_attempts",
+    "customer_tenure_months"
+  ]
 }

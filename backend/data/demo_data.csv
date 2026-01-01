@@ -1,11 +1,6 @@
-account_id,company_name,industry,region,amount,days_overdue,payment_history_score,shipment_volume_change_30d,email_opened,dispute_flag,outcome
-DEMO001,TechCorp Global,Tech,West,45000,78,0.22,-0.6,0,1,0
-DEMO002,SafePay Industries,Retail,North,32000,8,0.94,0.3,1,0,1
-DEMO003,RiskyCo Ltd,Construction,South,28500,85,0.18,-0.55,0,1,0
-DEMO004,TrustBuild Inc,Medical,East,51000,12,0.91,0.35,1,0,1
-DEMO005,DelayedPay Corp,Textile,West,19000,72,0.25,-0.48,1,0,0
-DEMO006,AlwaysOnTime LLC,Retail,North,38000,5,0.97,0.42,1,0,1
-DEMO007,StruggleTech,Tech,South,42000,81,0.19,-0.52,0,1,0
-DEMO008,PremiumClient Co,Medical,East,67000,10,0.95,0.38,1,0,1
-DEMO009,CashFlow Problems,Construction,West,23000,88,0.15,-0.58,0,0,0
-DEMO010,GoldStar Partners,Retail,North,55000,6,0.98,0.45,1,0,1
+account_id,company_name,industry,region,amount,days_overdue,payment_history_score,shipment_volume_change_30d,shipment_volume_30d,express_ratio,destination_diversity,contact_attempts,customer_tenure_months,email_opened,dispute_flag
+ACC0001,TechCorp Solutions Pvt Ltd,Technology,South,2800000,90,0.88,0.40,45,0.65,18,3,36,TRUE,FALSE
+DEMO002,Global Logistics,Logistics,West,450000,15,0.92,0.10,120,0.40,25,1,12,TRUE,FALSE
+DEMO003,Retail Giant,Retail,North,1200000,60,0.65,-0.25,300,0.20,50,5,60,FALSE,TRUE
+DEMO004,BioPharma Inc,Healthcare,East,3500000,10,0.95,0.05,80,0.80,10,2,48,TRUE,FALSE
+DEMO005,Quick Prints,Manufacturing,South,50000,45,0.40,-0.50,15,0.10,5,8,24,FALSE,FALSE

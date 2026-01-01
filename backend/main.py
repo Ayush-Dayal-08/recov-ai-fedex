@@ -1,65 +1,72 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException, File, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from pydantic import BaseModel
-from typing import Optional
-import uvicorn
+from backend.models import AccountData, PredictionResponse
+from backend.predictor import RecoveryPredictor
+import pandas as pd
+import io
 
-# Relative import
-from .predictor import RecoveryPredictor
+# ==========================================
+# SETUP & CONFIGURATION
+# ==========================================
+app = FastAPI(title="Recov.AI FedEx Backend", version="1.0")
 
-app = FastAPI()
-
-# --- 1. ALLOW ALL CONNECTIONS (CORS) ---
-# This fixes the "Blocked" errors
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Allows all origins
+    allow_origins=["*"],
     allow_credentials=True,
-    allow_methods=["*"],  # Allows all methods (POST, GET, etc.)
-    allow_headers=["*"],  # Allows all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 
-# Initialize AI
-try:
-    predictor = RecoveryPredictor()
-    print("✅ AI Engine Loaded")
-except Exception as e:
-    print(f"❌ AI Engine Failed: {e}")
-    predictor = None
-
-# --- 2. DEFINE DATA STRUCTURE ---
-# The frontend MUST send data matching this exactly
-class AccountRequest(BaseModel):
-    account_id: str
-    company_name: str
-    amount: float
-    days_overdue: int
-    payment_history_score: float
-    shipment_volume_30d: int
-    shipment_volume_change_30d: float
-    industry: str
-    region: str
-    # Optional fields
-    express_ratio: Optional[float] = 0.0
-    destination_diversity: Optional[int] = 0
-    email_opened: Optional[bool] = False
-    dispute_flag: Optional[bool] = False
+predictor = RecoveryPredictor()
+accounts_db = {} # In-memory storage
 
 @app.get("/")
 def home():
-    return {"status": "Backend is Running", "url": "http://127.0.0.1:8000"}
+    return {"status": "Backend is Running", "accounts_analyzed": len(accounts_db)}
 
-@app.post("/predict")
-def predict_recovery(data: AccountRequest):
-    print(f"📩 Received Request for: {data.company_name}")
-    
-    if not predictor:
-        return {"error": "AI Model not loaded"}
+# 1. SINGLE PREDICTION
+@app.post("/predict", response_model=PredictionResponse)
+def predict_single(account: AccountData):
+    try:
+        data = account.dict()
+        result = predictor.predict_recovery(data)
+        acc_id = data.get("account_id", "SINGLE_SCAN")
+        accounts_db[acc_id] = result
+        return result
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+# 2. BATCH CSV UPLOAD
+@app.post("/analyze")
+async def analyze_batch(file: UploadFile = File(...)):
+    try:
+        contents = await file.read()
+        df = pd.read_csv(io.StringIO(contents.decode('utf-8')))
+        results = []
         
-    account_data = data.dict()
-    result = predictor.predict_recovery(account_data)
-    return result
+        for _, row in df.iterrows():
+            account_data = row.to_dict()
+            try:
+                # Ensure minimal required fields exist
+                if 'amount' not in account_data: account_data['amount'] = 0
+                
+                prediction = predictor.predict_recovery(account_data)
+                
+                acc_id = str(account_data.get('account_id', f"ROW_{_}"))
+                accounts_db[acc_id] = prediction
+                results.append(prediction)
+            except Exception as e:
+                print(f"Skipping row {_}: {e}")
+                continue
+                
+        return {"status": "success", "results": results}
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 
-if __name__ == "__main__":
-    # Force it to run on 127.0.0.1 port 8000
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+# 3. GET DETAILS
+@app.get("/account/{account_id}")
+def get_account(account_id: str):
+    if account_id in accounts_db:
+        return accounts_db[account_id]
+    raise HTTPException(status_code=404, detail="Account not found")
