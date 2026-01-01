@@ -122,27 +122,28 @@ def predict_single(data: AccountRequest):
         result = predictor.predict_recovery(account_data)
         
         # Ensure it's a dict
-        return to_dict(result)
+        result_dict = to_dict(result)
+        
+        # Add original data back
+        result_dict['amount'] = float(account_data.get('amount', 0))
+        result_dict['days_overdue'] = int(account_data.get('days_overdue', 0))
+
+        return result_dict
         
     except Exception as e: 
         raise HTTPException(status_code=500, detail=f"Prediction failed:  {str(e)}")
 
 @app.post("/analyze")
-async def analyze_csv(file: UploadFile = File(... )):
+async def analyze_csv(file: UploadFile = File(...)):
     """
     Analyze multiple accounts from CSV file. 
     
     **Day 3 Requirement:** CSV upload and batch processing
-    
-    Expected CSV columns:
-    - account_id, company_name, amount, days_overdue
-    - payment_history_score, shipment_volume_change_30d
-    - Optional: industry, region, email_opened, dispute_flag
     """
-    if not predictor: 
+    if not predictor:
         raise HTTPException(status_code=500, detail="AI Engine not loaded")
     
-    try: 
+    try:
         # Read CSV file
         contents = await file.read()
         df = pd.read_csv(io.BytesIO(contents))
@@ -169,10 +170,16 @@ async def analyze_csv(file: UploadFile = File(... )):
             # Get prediction and convert to dict
             result = predictor.predict_recovery(account_dict)
             result_dict = to_dict(result)
+            
+            # ✅ NEW: Include original account data in response
+            # Using safe casting to ensure frontend doesn't break
+            result_dict['amount'] = float(account_dict.get('amount', 0) or 0)
+            result_dict['days_overdue'] = int(account_dict.get('days_overdue', 0) or 0)
+            
             predictions.append(result_dict)
         
         return {
-            "total_accounts":  len(predictions),
+            "total_accounts": len(predictions),
             "predictions": predictions,
             "summary": {
                 "high_probability": sum(1 for p in predictions if p['recovery_probability'] > 0.7),
@@ -183,7 +190,7 @@ async def analyze_csv(file: UploadFile = File(... )):
         
     except pd.errors.EmptyDataError:
         raise HTTPException(status_code=400, detail="CSV file is empty")
-    except Exception as e: 
+    except Exception as e:
         raise HTTPException(status_code=500, detail=f"Analysis failed: {str(e)}")
 
 @app.get("/account/{account_id}")
@@ -206,7 +213,13 @@ def get_account(account_id: str):
     try: 
         account_data = accounts_db[account_id]
         result = predictor.predict_recovery(account_data)
-        return to_dict(result)
+        
+        # Convert to dict and enrich with original data
+        result_dict = to_dict(result)
+        result_dict['amount'] = float(account_data.get('amount', 0))
+        result_dict['days_overdue'] = int(account_data.get('days_overdue', 0))
+        
+        return result_dict
         
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Prediction failed: {str(e)}")
