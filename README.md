@@ -842,7 +842,7 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 **Project Maintainer:** AYUSH DAYAL
 
 - **Email:** ayushdayal08@gmail.com
-- **LinkedIn:** [https://www.linkedin.com/in/ayush-dayal-249b6a374/](https://linkedin.com/in/your-profile)
+- **LinkedIn:** [https://www.linkedin.com/in/ayush-dayal-249b6a374/](https://www.linkedin.com/in/ayush-dayal-249b6a374/)
 - **GitHub:** [@Ayush-Dayal-08](https://github.com/Ayush-Dayal-08)
 
 **Project Link:** [https://github.com/Ayush-Dayal-08/recov-ai-fedex](https://github.com/Ayush-Dayal-08/recov-ai-fedex)
