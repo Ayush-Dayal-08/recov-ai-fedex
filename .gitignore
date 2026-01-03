@@ -1,18 +1,29 @@
 # Python
 __pycache__/
-*.pyc
-*.pyo
-venv/
+*.py[cod]
+*. so
 .venv/
-env/
+venv/
+*. egg-info/
 
 # Node
 node_modules/
 dist/
+build/
+*.log
 
-# Data (Keep demo data, ignore large training files if needed later)
-# For now, we keep CSVs so you can see them
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
 
 # Environment
 .env
-.DS_Store
+.env.local
+
+# Model artifacts (optional - keep if < 100MB)
+# backend/models/*. pkl

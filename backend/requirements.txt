@@ -1,6 +1,29 @@
+# ============================================================================
+# RECOV. AI - Backend Dependencies
+# FedEx SMART Hackathon 2026
+# ============================================================================
+
+# WEB FRAMEWORK
 fastapi==0.115.0
 uvicorn[standard]==0.32.0
 python-multipart==0.0.17
+
+# DATA PROCESSING
 pandas==2.2.0
 numpy==1.26.0
+
+# MACHINE LEARNING
 scikit-learn==1.5.0
+xgboost==2.0.3
+
+# MODEL PERSISTENCE
+joblib==1.4.2
+
+# DATA VALIDATION
+pydantic==2.5.0
+
+# ============================================================================
+# DEPLOYMENT DEPENDENCIES (Optional - for production)
+# ============================================================================
+# gunicorn==21.2.0  # Production WSGI server (uncomment if deploying)
+# python-dotenv==1.0.0  # Environment variables (uncomment if using .env)
