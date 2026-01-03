@@ -1,3 +1,4 @@
+```markdown
 <div align="center">
 
 # 🔮 RECOV.AI
@@ -8,7 +9,7 @@
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/downloads/)
-[![React](https://img.shields.io/badge/react-18.3-61DAFB.svg? logo=react)](https://reactjs.org/)
+[![React](https://img.shields.io/badge/react-18.3-61DAFB.svg?logo=react)](https://reactjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com/)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0-orange.svg)](https://xgboost.readthedocs.io/)
 
@@ -42,13 +43,13 @@
 
 ## 🎯 Overview
 
-**RECOV.AI** is an AI-powered debt recovery intelligence system that analyzes thousands of overdue accounts in seconds, predicts recovery probability with explainable insights, and generates personalized recovery strategies that preserve customer relationships. 
+**RECOV.AI** is an AI-powered debt recovery intelligence system that analyzes thousands of overdue accounts in seconds, predicts recovery probability with explainable insights, and generates personalized recovery strategies that preserve customer relationships.
 
-### **Tagline:** *"Know Who Will Pay.  Know How to Ask."*
+### **Tagline:** *"Know Who Will Pay. Know How to Ask."*
 
 ### **Problem Being Solved:**
 
-FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to: 
+FedEx loses **₹780 Crore annually** ($93.6M) in India alone due to:
 - ⏰ **90 minutes** manual analysis per account
 - 💔 **One-size-fits-all** aggressive tactics that damage valuable customer relationships
 - 📉 **60% of effort** wasted on unrecoverable debt
@@ -60,9 +61,9 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
 |--------|-----------------|----------------|-------------|
 | **Analysis Time** | 90 minutes/account | 3 seconds/1,000 accounts | **99.9% faster** |
 | **Recovery Rate** | 35% | 60% | **+25% improvement** |
-| **Labor Cost** | ₹1. 92 Cr/year | ₹25 Lakh/year | **₹1.67 Cr saved** |
+| **Labor Cost** | ₹1.92 Cr/year | ₹25 Lakh/year | **₹1.67 Cr saved** |
 | **Customer Churn** | 18% | ~2% | **₹72 Cr preserved** |
-| **Total Annual Value** | - | **₹373. 67 Cr** ($44.84M) | **18,684% ROI** |
+| **Total Annual Value** | - | **₹373.67 Cr** ($44.84M) | **18,684% ROI** |
 
 ---
 
@@ -95,7 +96,7 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
 
 ## ✅ Our Solution
 
-### **RECOV.AI:  Intelligent, Explainable, Relationship-Preserving Debt Recovery**
+### **RECOV.AI: Intelligent, Explainable, Relationship-Preserving Debt Recovery**
 
 **How It Works (3 Simple Steps):**
 
@@ -105,7 +106,7 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
 - **Time:** 3 seconds (vs. 3 days manual)
 
 #### **2. 🤖 AI Analysis**
-- XGBoost ML model analyzes 20 features per account: 
+- XGBoost ML model analyzes 20 features per account:
   - **Numerical:** Amount, days overdue, payment history, shipment volume change
   - **Categorical:** Industry (Tech/Retail/Construction/Medical/Textile), Region
   - **Behavioral:** Email engagement, dispute history
@@ -117,10 +118,10 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
   - 🟢 **High (>70%):** Gentle reminders, preserve relationship
   - 🟡 **Medium (40-70%):** Personalized outreach, payment plans
   - 🔴 **Low (<40%):** Legal escalation, write-off consideration
-  
+
 - **Personalized Strategies:**
   - **TechCorp (93%):** "Send account manager with coffee, not lawyer"
-  - **RiskyCo (0. 3%):** "Legal notice, asset seizure, write-off"
+  - **RiskyCo (0.3%):** "Legal notice, asset seizure, write-off"
 
 ---
 
@@ -134,12 +135,12 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
 ### **2. 🔍 Explainable AI (SHAP)**
 - **ONLY** debt recovery solution with SHAP transparency
 - Visual feature impact charts show WHY each prediction is made
-- Builds stakeholder trust (CFO can see:  "93% BECAUSE payment history + growth")
+- Builds stakeholder trust (CFO can see: "93% BECAUSE payment history + growth")
 
 ### **3. 💎 Relationship Preservation**
 - AI recommends gentle approach for valued customers (In-House Retention Team)
 - Prevents ₹72 Cr annual churn (18% → 2%)
-- DCA matching:  Premium services for high-value, legal for deadbeats
+- DCA matching: Premium services for high-value, legal for deadbeats
 
 ### **4. 🎨 Beautiful UI**
 - Purple gradient dashboard (FedEx brand colors)
@@ -150,7 +151,7 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
 ### **5. 📈 Proven ROI**
 - ₹2 Crore investment → ₹373.67 Crore annual value
 - **18,684% ROI**
-- **Payback period:  1.96 days**
+- **Payback period: 1.96 days**
 - For every ₹1 invested → ₹187 returned
 
 ### **6. 🌍 India-Aware**
@@ -193,7 +194,7 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
 ### **DevOps**
 - **Version Control:** Git + GitHub
 - **Package Management:** pip (Python), npm (Node.js)
-- **Environment:** Virtual environments (. venv)
+- **Environment:** Virtual environments (.venv)
 - **CI/CD:** GitHub Actions (roadmap)
 
 ---
@@ -209,7 +210,7 @@ FedEx loses **₹780 Crore annually** ($93. 6M) in India alone due to:
        │ 1. Upload CSV (1,000 accounts)
        ↓
 ┌──────────────────────────────────────┐
-│   FRONTEND (React + Tailwind)       │
+│   FRONTEND (React + Tailwind)        │
 │   - File upload with drag-drop       │
 │   - Account list (color-coded cards) │
 │   - Account detail (AI insights)     │
@@ -283,7 +284,7 @@ cd recov-ai-fedex
 cd backend
 
 # Create virtual environment
-python -m venv . venv
+python -m venv .venv
 
 # Activate (Windows)
 .venv\Scripts\activate
@@ -312,7 +313,7 @@ pip install -r requirements.txt
 
 ```bash
 # Check XGBoost
-python -c "import xgboost; print(f'XGBoost:  {xgboost.__version__}')"
+python -c "import xgboost; print(f'XGBoost: {xgboost.__version__}')"
 
 # Check model file exists
 python -c "import os; print('Model exists!' if os.path.exists('models/recovery_model.pkl') else 'Model missing!')"
@@ -326,7 +327,7 @@ uvicorn main:app --reload
 
 # Expected output:
 # ✅ AI Engine Loaded Successfully
-# INFO:  Uvicorn running on http://127.0.0.1:8000
+# INFO: Uvicorn running on http://127.0.0.1:8000
 ```
 
 **Access API docs:** http://127.0.0.1:8000/docs
@@ -369,7 +370,7 @@ npm run dev
 ```bash
 # Terminal 1: Backend
 cd backend
-. venv\Scripts\activate  # Windows
+.venv\Scripts\activate  # Windows
 uvicorn main:app --reload
 
 # Terminal 2: Frontend
@@ -394,7 +395,7 @@ npm run dev
 **Sample CSV:**
 ```csv
 account_id,company_name,industry,region,amount,days_overdue,payment_history_score,shipment_volume_change_30d,email_opened,dispute_flag
-ACC0001,TechCorp Solutions,Technology,South,2800000,90,0. 88,0.40,TRUE,FALSE
+ACC0001,TechCorp Solutions,Technology,South,2800000,90,0.88,0.40,TRUE,FALSE
 DEMO002,SafePay Industries,Retail,North,32000,8,0.94,0.30,TRUE,FALSE
 ```
 
@@ -409,7 +410,7 @@ DEMO002,SafePay Industries,Retail,North,32000,8,0.94,0.30,TRUE,FALSE
 
 ### **3. Click Account for Details**
 
-**Example:  TechCorp Solutions (ACC0001)**
+**Example: TechCorp Solutions (ACC0001)**
 
 **Shows:**
 - **Recovery Probability:** 93% (large purple gradient panel)
@@ -465,8 +466,8 @@ curl "http://127.0.0.1:8000/account/ACC0001"
 
 ### **1. Landing Page - File Upload**
 
-<!-- Screenshot:  Upload interface with purple dashed border -->
-![File Upload](. github/screenshots/upload.png)
+<!-- Screenshot: Upload interface with purple dashed border -->
+![File Upload](.github/screenshots/upload.png)
 
 *Features:*
 - Drag-and-drop CSV upload
@@ -491,7 +492,7 @@ curl "http://127.0.0.1:8000/account/ACC0001"
 ### **3. Hero Account Detail (TechCorp - 93%)**
 
 <!-- Screenshot: Full detail view with purple AI panel -->
-![Hero Account Detail](.github/screenshots/hero-account. png)
+![Hero Account Detail](.github/screenshots/hero-account.png)
 
 *Features:*
 - Large 93% display in purple gradient
@@ -563,7 +564,7 @@ GET /
 ```json
 {
   "status": "RECOV.AI Backend Running",
-  "project":  "FedEx SMART Hackathon 2026",
+  "project": "FedEx SMART Hackathon 2026",
   "ai_engine": "Loaded"
 }
 ```
@@ -589,7 +590,7 @@ Content-Type: application/json
   "industry": "Technology",
   "region": "South",
   "email_opened": true,
-  "dispute_flag":  false
+  "dispute_flag": false
 }
 ```
 
@@ -600,7 +601,7 @@ Content-Type: application/json
   "company_name": "TechCorp Solutions",
   "recovery_probability": 0.925,
   "recovery_percentage": 0.925,
-  "expected_days":  25,
+  "expected_days": 25,
   "recovery_velocity_score": 3.7,
   "risk_level": "Low",
   "recommended_dca": {
@@ -645,11 +646,11 @@ Content-Type: multipart/form-data
 ```json
 {
   "total_accounts": 10,
-  "predictions": [ /* array of PredictionResponse */ ],
+  "predictions": [],
   "summary": {
-    "high_probability":  5,
-    "medium_probability":  0,
-    "low_probability":  5
+    "high_probability": 5,
+    "medium_probability": 0,
+    "low_probability": 5
   }
 }
 ```
@@ -673,7 +674,7 @@ GET /account/ACC0001
 
 ### **Swagger UI**
 
-Interactive API documentation:  http://127.0.0.1:8000/docs
+Interactive API documentation: http://127.0.0.1:8000/docs
 
 ---
 
@@ -684,7 +685,7 @@ Interactive API documentation:  http://127.0.0.1:8000/docs
 | Metric | Value | Status |
 |--------|-------|--------|
 | **Algorithm** | XGBoost Classifier | ✅ |
-| **Training Accuracy** | 100. 0% | ⚠️ Potential overfitting |
+| **Training Accuracy** | 100.0% | ⚠️ Potential overfitting |
 | **Test Accuracy** | 100.0% | ⚠️ Need validation set |
 | **ROC-AUC Score** | 1.0000 | ✅ Perfect discrimination |
 | **Precision** | 1.00 | ✅ No false positives |
@@ -719,9 +720,9 @@ Interactive API documentation:  http://127.0.0.1:8000/docs
 ### **Real-World Validation**
 
 - **Hero Account (ACC0001):** 93% prediction ✅
-  - Expected:  High probability (excellent history + growth)
-  - Result:  CORRECT (model understood context)
-  
+  - Expected: High probability (excellent history + growth)
+  - Result: CORRECT (model understood context)
+
 - **Failing Business (RiskyCo):** 0.3% prediction ✅
   - Expected: Low probability (poor history + 55% decline)
   - Result: CORRECT (model detected failure signals)
@@ -739,11 +740,11 @@ recov-ai-fedex/
 │   │   └── training_data.csv    # 1,000 training records
 │   ├── models/
 │   │   └── recovery_model.pkl   # Trained XGBoost model (30KB)
-│   ├── main.py                   # FastAPI app (4 endpoints)
-│   ├── predictor.py              # RecoveryPredictor class
-│   ├── models.py                 # Pydantic data models
-│   ├── requirements.txt          # Python dependencies
-│   └── test_api.py               # API test suite
+│   ├── main.py                  # FastAPI app (4 endpoints)
+│   ├── predictor.py             # RecoveryPredictor class
+│   ├── models.py                # Pydantic data models
+│   ├── requirements.txt         # Python dependencies
+│   └── test_api.py              # API test suite
 │
 ├── frontend/                     # React Frontend
 │   ├── src/
@@ -752,25 +753,25 @@ recov-ai-fedex/
 │   │   │   ├── FileUpload.jsx   # CSV upload with drag-drop
 │   │   │   ├── AccountList.jsx  # Card grid (color-coded)
 │   │   │   └── AccountDetail.jsx # AI insights + SHAP chart
-│   │   ├── App.jsx               # Main app (routing)
-│   │   ├── main.jsx              # React entry point
-│   │   └── index.css             # Custom styles
-│   ├── index.html                # Tailwind CDN config
-│   ├── package.json              # npm dependencies
-│   └── vite.config.js            # Vite configuration
+│   │   ├── App.jsx              # Main app (routing)
+│   │   ├── main.jsx             # React entry point
+│   │   └── index.css            # Custom styles
+│   ├── index.html               # Tailwind CDN config
+│   ├── package.json             # npm dependencies
+│   └── vite.config.js           # Vite configuration
 │
 ├── ml/                           # Machine Learning
 │   ├── notebooks/
 │   │   └── exploratory_analysis.ipynb  # Data exploration
 │   └── scripts/
-│       └── retrain_model.py      # Model training script
+│       └── retrain_model.py     # Model training script
 │
-├── . github/
-│   └── screenshots/              # README images (add here)
+├── .github/
+│   └── screenshots/             # README images (add here)
 │
-├── . gitignore
+├── .gitignore
 ├── LICENSE
-└── README.md                     # This file
+└── README.md                    # This file
 ```
 
 ---
@@ -879,8 +880,9 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ### **Made with ❤️ for FedEx SMART Hackathon 2026**
 
-**Know Who Will Pay.  Know How to Ask.**
+**Know Who Will Pay. Know How to Ask.**
 
 [⬆ Back to Top](#-recovai)
 
 </div>
+```
